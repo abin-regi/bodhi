@@ -20,10 +20,10 @@ export default function EventMarquee() {
       <div className="flex animate-marquee">
         {items.map((event, i) => (
           <span key={i} className="flex items-center shrink-0">
-            <span className="text-sm md:text-base font-mono text-white/20 tracking-widest uppercase whitespace-nowrap px-4 hover:text-green-500/60 transition-colors cursor-default">
+            <span className="text-sm md:text-base font-mono text-white/20 tracking-widest uppercase whitespace-nowrap px-4 hover:text-red-500/60 transition-colors cursor-default">
               {event}
             </span>
-            <span className="text-green-500/30 text-xs mx-2">{"•"}</span>
+            <span className="text-red-500/30 text-xs mx-2">{"•"}</span>
           </span>
         ))}
       </div>

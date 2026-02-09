@@ -15,8 +15,8 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "TATHVA '25 | Annual Techno-Management Fest of NIT Calicut",
-  description: "South India's largest tech fest - October 24, 25, 26, 2025 at NIT Calicut",
+  title: "BODHI x Drishya '25 | Annual Techno-Management Fest of Viswajyothi College of Engineering and Technology",
+  description: "Annual tech fest - October 24, 25, 26, 2025 at Viswajyothi College of Engineering and Technology, Vazhakulam",
 }
 
 export const viewport: Viewport = {
