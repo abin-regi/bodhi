@@ -65,6 +65,7 @@ const config: Config = {
       fontFamily: {
         sans: ['var(--font-space-grotesk)', 'sans-serif'],
         mono: ['var(--font-jetbrains)', 'monospace'],
+        asoka: ['var(--font-asoka)', 'sans-serif'],
       },
       borderRadius: {
         lg: 'var(--radius)',
