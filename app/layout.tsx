@@ -1,6 +1,7 @@
 import React from "react"
 import type { Metadata, Viewport } from 'next'
 import { Space_Grotesk, JetBrains_Mono } from 'next/font/google'
+import localFont from 'next/font/local'
 
 import './globals.css'
 
@@ -12,6 +13,11 @@ const spaceGrotesk = Space_Grotesk({
 const jetbrainsMono = JetBrains_Mono({
   subsets: ['latin'],
   variable: '--font-jetbrains',
+})
+
+const asoka = localFont({
+  src: '../public/fonts/ASOKA.ttf',
+  variable: '--font-asoka',
 })
 
 export const metadata: Metadata = {
@@ -29,7 +35,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${spaceGrotesk.variable} ${jetbrainsMono.variable}`}>
+    <html lang="en" className={`${spaceGrotesk.variable} ${jetbrainsMono.variable} ${asoka.variable}`}>
       <body className="font-sans antialiased bg-[#050505] text-[#f0f0f0] overflow-x-hidden">
         {children}
       </body>
