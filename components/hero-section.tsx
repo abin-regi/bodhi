@@ -12,12 +12,12 @@ export default function HeroSection() {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#050505] grid-bg noise-overlay"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-transparent pt-16 lg:pt-0"
     >
-      {/* Radial gradient overlay */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(239,68,68,0.08)_0%,transparent_70%)]" />
+      {/* Radial gradient overlay - lighter for better visibility of 3D */}
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(0,0,0,0)_0%,rgba(0,0,0,0.8)_100%)] pointer-events-none" />
 
-      <div className={`relative z-10 text-center px-4 transition-all duration-1000 ${mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
+      <div className={`relative z-10 text-center px-5 transition-all duration-1000 ${mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
         {/* Top label */}
         <div className="flex items-center justify-center gap-3 mb-6">
           <span className="h-px w-8 bg-red-500/50" />
@@ -28,7 +28,7 @@ export default function HeroSection() {
         </div>
 
         {/* Main title */}
-        <h1 className="text-5xl md:text-[8rem] lg:text-[10rem] font-sans font-bold tracking-tighter leading-none text-white">
+        <h1 className="text-[2.5rem] sm:text-5xl md:text-[8rem] lg:text-[10rem] font-sans font-bold tracking-tighter leading-none text-white">
           BODHI x Drishya
         </h1>
 
@@ -43,7 +43,7 @@ export default function HeroSection() {
 
         {/* Year */}
         <p className="text-6xl md:text-8xl font-sans font-bold text-white/5 mt-2 tracking-tighter">
-          2025
+          2026
         </p>
 
         {/* Badge */}

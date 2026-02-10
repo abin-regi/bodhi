@@ -142,3 +142,31 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* Slow beam/heartbeat glow — like a pulse on a monitor */
+@keyframes beam-pulse {
+  0%, 100% {
+    text-shadow: 0 0 0px rgba(220, 38, 38, 0), 0 0 0px rgba(220, 38, 38, 0);
+    color: rgba(255, 255, 255, 0.85);
+  }
+  15% {
+    text-shadow: 0 0 20px rgba(220, 38, 38, 0.6), 0 0 60px rgba(220, 38, 38, 0.2), 0 0 100px rgba(220, 38, 38, 0.08);
+    color: rgba(255, 255, 255, 1);
+  }
+  30% {
+    text-shadow: 0 0 4px rgba(220, 38, 38, 0.1), 0 0 10px rgba(220, 38, 38, 0.05);
+    color: rgba(255, 255, 255, 0.9);
+  }
+  40% {
+    text-shadow: 0 0 12px rgba(220, 38, 38, 0.4), 0 0 40px rgba(220, 38, 38, 0.15);
+    color: rgba(255, 255, 255, 0.95);
+  }
+  55% {
+    text-shadow: 0 0 0px rgba(220, 38, 38, 0), 0 0 0px rgba(220, 38, 38, 0);
+    color: rgba(255, 255, 255, 0.85);
+  }
+}
+
+.animate-beam {
+  animation: beam-pulse 6s ease-in-out infinite;
+}

@@ -2,6 +2,7 @@ import React from "react"
 import type { Metadata, Viewport } from 'next'
 import { Space_Grotesk, JetBrains_Mono } from 'next/font/google'
 import localFont from 'next/font/local'
+import SmoothScroll from "@/components/smooth-scroll"
 
 import './globals.css'
 
@@ -37,7 +38,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${spaceGrotesk.variable} ${jetbrainsMono.variable} ${asoka.variable}`}>
       <body className="font-sans antialiased bg-[#050505] text-[#f0f0f0] overflow-x-hidden">
-        {children}
+        <SmoothScroll>
+          {children}
+        </SmoothScroll>
       </body>
     </html>
   )

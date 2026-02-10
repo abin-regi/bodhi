@@ -21,7 +21,7 @@ export default function Navbar() {
   return (
     <>
       {/* Desktop Sidebar Navigation */}
-      <nav className="fixed left-0 top-0 h-full w-16 z-50 hidden lg:flex flex-col items-center justify-between py-6 border-r border-white/5 bg-[#050505]/80 backdrop-blur-md">
+      <nav className="fixed left-0 top-0 h-full w-16 z-50 hidden lg:flex flex-col items-center justify-between py-6 border-r border-white/5 bg-transparent backdrop-blur-none">
         <Link href="/" className="flex flex-col items-center gap-2">
           <div className="w-8 h-8 rounded-full border border-red-500/50 flex items-center justify-center hover:bg-red-500/10 transition-colors">
             <span className="text-red-500 text-[8px] font-mono font-bold tracking-tighter">BD25</span>
@@ -85,17 +85,17 @@ export default function Navbar() {
       </header>
 
       {/* Floating Snackbar */}
-      <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 flex items-center gap-1 bg-[#0a0a0a]/90 backdrop-blur-md border border-white/10 rounded-lg px-2 py-2 shadow-2xl">
+      <div className="fixed bottom-4 md:bottom-6 left-1/2 -translate-x-1/2 z-50 flex items-center gap-1 bg-[#0a0a0a]/90 backdrop-blur-md border border-white/10 rounded-lg px-1.5 md:px-2 py-1.5 md:py-2 shadow-2xl">
         <Link
           href="/bodhi"
-          className="px-6 py-2 text-xs font-mono tracking-widest text-red-500 hover:bg-red-500/10 rounded-md transition-all"
+          className="px-4 md:px-6 py-2 text-[10px] md:text-xs font-mono tracking-widest text-red-500 hover:bg-red-500/10 rounded-md transition-all"
         >
           BODHI
         </Link>
-        <div className="w-px h-6 bg-white/10" />
+        <div className="w-px h-5 md:h-6 bg-white/10" />
         <Link
           href="/drishya"
-          className="px-6 py-2 text-xs font-mono tracking-widest text-white/70 hover:bg-white/5 hover:text-white rounded-md transition-all"
+          className="px-4 md:px-6 py-2 text-[10px] md:text-xs font-mono tracking-widest text-white/70 hover:bg-white/5 hover:text-white rounded-md transition-all"
         >
           DRISHYA
         </Link>

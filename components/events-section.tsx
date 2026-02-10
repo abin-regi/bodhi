@@ -31,7 +31,7 @@ const events = [
 
 export default function EventsSection() {
   return (
-    <section id="explore" className="relative py-24 px-4 bg-[#050505]">
+    <section id="explore" className="relative py-24 px-4 bg-transparent">
       <div className="max-w-7xl mx-auto lg:ml-20">
         {/* Section header */}
         <div className="mb-16">
