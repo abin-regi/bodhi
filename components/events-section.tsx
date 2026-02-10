@@ -9,7 +9,7 @@ const events = [
     title: "TECHNICAL",
     subtitle: "WORKSHOPS",
     description: "Hands-on sessions with industry experts. Build real projects and learn cutting-edge technologies.",
-    color: "green",
+    color: "red",
   },
   {
     icon: Trophy,
@@ -17,7 +17,7 @@ const events = [
     title: "THRILLING",
     subtitle: "COMPETITIONS",
     description: "Push your limits in intense technical and management competitions with participants across the nation.",
-    color: "green",
+    color: "red",
   },
   {
     icon: Lightbulb,
@@ -25,7 +25,7 @@ const events = [
     title: "INSIGHTFUL",
     subtitle: "LECTURES",
     description: "Hear from thought leaders, innovators, and visionaries who are shaping the future of technology.",
-    color: "green",
+    color: "red",
   },
 ]
 
@@ -36,8 +36,8 @@ export default function EventsSection() {
         {/* Section header */}
         <div className="mb-16">
           <div className="flex items-center gap-3 mb-4">
-            <span className="h-px w-12 bg-green-500/30" />
-            <span className="text-[10px] font-mono text-green-500/60 tracking-[0.3em] uppercase">
+            <span className="h-px w-12 bg-red-500/30" />
+            <span className="text-[10px] font-mono text-red-500/60 tracking-[0.3em] uppercase">
               What awaits you
             </span>
           </div>
@@ -48,19 +48,19 @@ export default function EventsSection() {
           {events.map((event) => (
             <div
               key={event.title}
-              className="group relative border border-white/5 bg-[#0a0a0a] hover:border-green-500/30 transition-all duration-500 overflow-hidden"
+              className="group relative border border-white/5 bg-[#0a0a0a] hover:border-red-500/30 transition-all duration-500 overflow-hidden"
             >
               {/* Top accent line */}
-              <div className="h-px w-full bg-gradient-to-r from-transparent via-green-500/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+              <div className="h-px w-full bg-gradient-to-r from-transparent via-red-500/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
 
               <div className="p-8">
                 {/* Tagline */}
-                <p className="text-[9px] font-mono text-green-500/50 tracking-[0.3em] mb-6">
+                <p className="text-[9px] font-mono text-red-500/50 tracking-[0.3em] mb-6">
                   {event.tagline}
                 </p>
 
                 {/* Icon */}
-                <event.icon className="w-8 h-8 text-green-500/60 mb-6 group-hover:text-green-500 transition-colors" />
+                <event.icon className="w-8 h-8 text-red-500/60 mb-6 group-hover:text-red-500 transition-colors" />
 
                 {/* Title */}
                 <h3 className="text-3xl font-sans font-bold text-white tracking-tight leading-none">
@@ -76,7 +76,7 @@ export default function EventsSection() {
                 </p>
 
                 {/* Arrow */}
-                <div className="mt-8 flex items-center gap-2 text-green-500/40 group-hover:text-green-500 transition-colors">
+                <div className="mt-8 flex items-center gap-2 text-red-500/40 group-hover:text-red-500 transition-colors">
                   <span className="text-[10px] font-mono tracking-widest">EXPLORE</span>
                   <span className="text-sm">{"-->"}</span>
                 </div>

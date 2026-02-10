@@ -40,16 +40,16 @@ export default function PassesSection() {
         {/* Section header */}
         <div className="mb-4">
           <div className="flex items-center gap-3 mb-4">
-            <span className="h-px w-12 bg-green-500/30" />
-            <span className="text-[10px] font-mono text-green-500/60 tracking-[0.3em] uppercase">
+            <span className="h-px w-12 bg-red-500/30" />
+            <span className="text-[10px] font-mono text-red-500/60 tracking-[0.3em] uppercase">
               Get Your Pass
             </span>
           </div>
           <h2 className="text-4xl md:text-6xl font-sans font-bold tracking-tighter text-white">
-            TATHVA PASS
+            BODHI x Drishya PASS
           </h2>
           <p className="text-sm font-mono text-white/30 mt-3 max-w-md">
-            One pass. Every moment of Tathva.
+            One pass. Every moment of BODHI x Drishya.
           </p>
         </div>
 
@@ -58,31 +58,29 @@ export default function PassesSection() {
           {passes.map((pass) => (
             <div
               key={pass.label}
-              className={`group relative border ${
-                pass.featured
-                  ? "border-green-500/30 bg-green-500/5"
+              className={`group relative border ${pass.featured
+                  ? "border-red-500/30 bg-red-500/5"
                   : "border-white/5 bg-[#0a0a0a]"
-              } hover:border-green-500/40 transition-all duration-500 overflow-hidden`}
+                } hover:border-red-500/40 transition-all duration-500 overflow-hidden`}
             >
               {/* Top line */}
               {pass.featured && (
-                <div className="h-px w-full bg-green-500/50" />
+                <div className="h-px w-full bg-red-500/50" />
               )}
 
               <div className="p-6">
                 {/* Header */}
                 <div className="flex items-start justify-between mb-6">
                   <div>
-                    <p className="text-[9px] font-mono text-white/30 tracking-widest">TATHVA 2025</p>
+                    <p className="text-[9px] font-mono text-white/30 tracking-widest">BODHI x Drishya 2025</p>
                     <p className="text-[9px] font-mono text-white/20 tracking-widest mt-1">ADMIT ONE</p>
                   </div>
                   <QrCode className="w-8 h-8 text-white/10" />
                 </div>
 
                 {/* Label */}
-                <h3 className={`text-2xl font-sans font-bold tracking-tight ${
-                  pass.featured ? "text-green-500" : "text-white"
-                }`}>
+                <h3 className={`text-2xl font-sans font-bold tracking-tight ${pass.featured ? "text-red-500" : "text-white"
+                  }`}>
                   {pass.label}
                 </h3>
 
@@ -101,16 +99,14 @@ export default function PassesSection() {
 
                 {/* Price */}
                 <div className="mt-6 flex items-end justify-between">
-                  <span className={`text-3xl font-sans font-bold tracking-tight ${
-                    pass.featured ? "text-green-500" : "text-white/90"
-                  }`}>
+                  <span className={`text-3xl font-sans font-bold tracking-tight ${pass.featured ? "text-red-500" : "text-white/90"
+                    }`}>
                     {pass.price}
                   </span>
-                  <button className={`text-[10px] font-mono tracking-widest px-4 py-2 border transition-all ${
-                    pass.featured
-                      ? "border-green-500/50 text-green-500 hover:bg-green-500 hover:text-black"
-                      : "border-white/10 text-white/40 hover:border-green-500/50 hover:text-green-500"
-                  }`}>
+                  <button className={`text-[10px] font-mono tracking-widest px-4 py-2 border transition-all ${pass.featured
+                      ? "border-red-500/50 text-red-500 hover:bg-red-500 hover:text-black"
+                      : "border-white/10 text-white/40 hover:border-red-500/50 hover:text-red-500"
+                    }`}>
                     LOGIN
                   </button>
                 </div>
