@@ -10,22 +10,32 @@ import WheelsSection from "@/components/wheels-section"
 import GPCSection from "@/components/gpc-section"
 import ExpoSection from "@/components/expo-section"
 import Footer from "@/components/footer"
+import CustomCursor from "@/components/custom-cursor"
+import Scene3DBackground from "@/components/3d/scene-background"
 
 export default function Page() {
   return (
-    <main className="relative bg-[#050505] lg:pl-16">
-      <Navbar />
-      <HeroSection />
-      <ScrollIndicator />
-      <EventsSection />
-      <EventMarquee />
-      <RobowarsSection />
-      <PassesSection />
-      <ProniteSection />
-      <WheelsSection />
-      <GPCSection />
-      <ExpoSection />
-      <Footer />
-    </main>
+    <>
+      <CustomCursor />
+      <Scene3DBackground />
+      <main className="relative z-10 lg:pl-16">
+        <Navbar />
+        <div className="relative">
+          <HeroSection />
+        </div>
+        <ScrollIndicator />
+        <div className="bg-[#050505]/90 backdrop-blur-sm">
+          <EventsSection />
+          <EventMarquee />
+          <RobowarsSection />
+          <PassesSection />
+          <ProniteSection />
+          <WheelsSection />
+          <GPCSection />
+          <ExpoSection />
+          <Footer />
+        </div>
+      </main>
+    </>
   )
 }

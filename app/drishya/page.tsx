@@ -1,7 +1,7 @@
 import Navbar from "@/components/navbar"
 import DrishyaHero from "@/components/drishya-hero"
 import DrishyaScrollStack from "@/components/DrishyaScrollStack"
-import EventCard from "@/components/event-card"
+import DrishyaEventCard from "@/components/drishya-event-card"
 import Footer from "@/components/footer"
 import { artsEvents } from "@/lib/events-data"
 import { ImageAutoSlider } from "@/components/ui/image-auto-slider"
@@ -36,10 +36,9 @@ export default function DrishyaPage() {
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
                         {artsEvents.slice(0, 6).map((event, index) => (
-                            <EventCard
+                            <DrishyaEventCard
                                 key={event.name}
                                 name={event.name}
-                                description={event.description}
                                 time={event.time || "10:00 AM"}
                                 location={event.location || "Venue"}
                                 index={index}
@@ -64,10 +63,9 @@ export default function DrishyaPage() {
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
                         {artsEvents.slice(6).map((event, index) => (
-                            <EventCard
+                            <DrishyaEventCard
                                 key={event.name}
                                 name={event.name}
-                                description={event.description}
                                 time={event.time || "10:00 AM"}
                                 location={event.location || "Venue"}
                                 index={index + 6}
