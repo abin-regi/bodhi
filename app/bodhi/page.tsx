@@ -4,56 +4,17 @@ import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 import CustomCursor from "@/components/custom-cursor"
 import EventCard from "@/components/event-card"
-import { eventZones } from "@/lib/events-data"
+import { departments, eventZones } from "@/lib/events-data"
 import { motion, AnimatePresence } from "framer-motion"
-import { useState, useMemo } from "react"
+import { useState } from "react"
 import { LayoutGrid, Building2 } from "lucide-react"
 
 export default function BodhiPage() {
-    const [viewMode, setViewMode] = useState<'zones' | 'depts'>('zones')
+    const [viewMode, setViewMode] = useState<'depts' | 'zones'>('depts')
 
-    // Helper to get all events with their zone info
-    const allEvents = useMemo(() => {
-        return eventZones.flatMap(zone =>
-            zone.events.map(event => ({
-                ...event,
-                zoneId: zone.id,
-                zoneTitle: zone.title
-            }))
-        )
-    }, [])
+    // Calculate total events
+    const totalEvents = departments.reduce((acc, dept) => acc + dept.events.length, 0)
 
-    // Grouping logic for departments
-    const groupedByDept = useMemo(() => {
-        const groups: Record<string, typeof allEvents> = {
-            'COMPUTER SCIENCE': [],
-            'ELECTRONICS & COMMUNICATION': [],
-            'ELECTRICAL & ELECTRONICS': [],
-            'MECHANICAL': [],
-            'CIVIL ENGINEERING': [],
-            'OPEN EVENTS': []
-        }
-
-        const deptMap: Record<string, string> = {
-            'CSE': 'COMPUTER SCIENCE',
-            'ECE': 'ELECTRONICS & COMMUNICATION',
-            'EEE': 'ELECTRICAL & ELECTRONICS',
-            'MECH': 'MECHANICAL',
-            'CIVIL': 'CIVIL ENGINEERING',
-            'GENERAL': 'OPEN EVENTS'
-        }
-
-        allEvents.forEach(event => {
-            const deptName = deptMap[(event as any).dept] || 'OPEN EVENTS'
-            if (groups[deptName]) {
-                groups[deptName].push(event)
-            } else {
-                groups['OPEN EVENTS'].push(event)
-            }
-        })
-
-        return Object.entries(groups).filter(([_, events]) => events.length > 0)
-    }, [allEvents])
     return (
         <>
             <CustomCursor />
@@ -126,12 +87,12 @@ export default function BodhiPage() {
                             animate={{ opacity: 1 }}
                             transition={{ duration: 0.8, delay: 0.3 }}
                         >
-                            Explore technical events across zones.
+                            Explore technical events across departments.
                             <br className="hidden md:block" />
                             Compete, learn, and innovate.
                         </motion.p>
 
-                        {/* Stats — Adjusted for Zones */}
+                        {/* Stats — Updated for Departments */}
                         <motion.div
                             className="mt-12 md:mt-16 flex items-center justify-center gap-5 md:gap-8"
                             initial={{ opacity: 0, y: 10 }}
@@ -139,13 +100,13 @@ export default function BodhiPage() {
                             transition={{ duration: 0.6, delay: 0.5 }}
                         >
                             <div className="text-center">
-                                <p className="text-2xl md:text-3xl font-black text-red-500">{eventZones.length}</p>
-                                <p className="text-[8px] md:text-[9px] font-mono text-white/40 tracking-widest uppercase mt-1">Zones</p>
+                                <p className="text-2xl md:text-3xl font-black text-red-500">{departments.length}</p>
+                                <p className="text-[8px] md:text-[9px] font-mono text-white/40 tracking-widest uppercase mt-1">Departments</p>
                             </div>
                             <div className="w-px h-8 md:h-10 bg-white/10" />
                             <div className="text-center">
                                 <p className="text-2xl md:text-3xl font-black text-red-500">
-                                    {eventZones.reduce((acc, zone) => acc + zone.events.length, 0)}
+                                    {totalEvents}
                                 </p>
                                 <p className="text-[8px] md:text-[9px] font-mono text-white/40 tracking-widest uppercase mt-1">Events</p>
                             </div>
@@ -169,16 +130,6 @@ export default function BodhiPage() {
                     <div className="fixed right-6 top-1/2 -translate-y-1/2 z-50 hidden md:block">
                         <div className="bg-black/60 backdrop-blur-xl border border-white/10 p-2 rounded-2xl flex flex-col gap-2 shadow-2xl">
                             <button
-                                onClick={() => setViewMode('zones')}
-                                className={`flex flex-col items-center gap-2 p-4 rounded-xl text-[10px] font-mono tracking-widest uppercase transition-all duration-300 w-24 ${viewMode === 'zones'
-                                    ? 'bg-red-600 text-white shadow-lg shadow-red-600/20'
-                                    : 'text-white/40 hover:text-white/70 hover:bg-white/5'
-                                    }`}
-                            >
-                                <LayoutGrid className="w-5 h-5" />
-                                <span>Zones</span>
-                            </button>
-                            <button
                                 onClick={() => setViewMode('depts')}
                                 className={`flex flex-col items-center gap-2 p-4 rounded-xl text-[10px] font-mono tracking-widest uppercase transition-all duration-300 w-24 ${viewMode === 'depts'
                                     ? 'bg-red-600 text-white shadow-lg shadow-red-600/20'
@@ -188,6 +139,16 @@ export default function BodhiPage() {
                                 <Building2 className="w-5 h-5" />
                                 <span>Depts</span>
                             </button>
+                            <button
+                                onClick={() => setViewMode('zones')}
+                                className={`flex flex-col items-center gap-2 p-4 rounded-xl text-[10px] font-mono tracking-widest uppercase transition-all duration-300 w-24 ${viewMode === 'zones'
+                                    ? 'bg-red-600 text-white shadow-lg shadow-red-600/20'
+                                    : 'text-white/40 hover:text-white/70 hover:bg-white/5'
+                                    }`}
+                            >
+                                <LayoutGrid className="w-5 h-5" />
+                                <span>Zones</span>
+                            </button>
                         </div>
                     </div>
 
@@ -195,18 +156,18 @@ export default function BodhiPage() {
                     <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 md:hidden">
                         <div className="bg-black/60 backdrop-blur-xl border border-white/10 p-1 rounded-full flex gap-1 shadow-2xl">
                             <button
-                                onClick={() => setViewMode('zones')}
-                                className={`flex items-center gap-2 px-4 py-2 rounded-full text-[10px] font-mono tracking-widest uppercase transition-all duration-300 ${viewMode === 'zones' ? 'bg-red-600 text-white' : 'text-white/40'}`}
-                            >
-                                <LayoutGrid className="w-3 h-3" />
-                                Zones
-                            </button>
-                            <button
                                 onClick={() => setViewMode('depts')}
                                 className={`flex items-center gap-2 px-4 py-2 rounded-full text-[10px] font-mono tracking-widest uppercase transition-all duration-300 ${viewMode === 'depts' ? 'bg-red-600 text-white' : 'text-white/40'}`}
                             >
                                 <Building2 className="w-3 h-3" />
                                 Depts
+                            </button>
+                            <button
+                                onClick={() => setViewMode('zones')}
+                                className={`flex items-center gap-2 px-4 py-2 rounded-full text-[10px] font-mono tracking-widest uppercase transition-all duration-300 ${viewMode === 'zones' ? 'bg-red-600 text-white' : 'text-white/40'}`}
+                            >
+                                <LayoutGrid className="w-3 h-3" />
+                                Zones
                             </button>
                         </div>
                     </div>
@@ -218,12 +179,45 @@ export default function BodhiPage() {
                 </div>
 
                 {/* ═══════════════════════════════════════════ */}
-                {/* EVENT ZONES LIST                           */}
+                {/* EVENTS LIST                                */}
                 {/* ═══════════════════════════════════════════ */}
                 <section className="py-12 md:py-20 px-4 md:px-8 relative min-h-screen">
                     <div className="max-w-7xl mx-auto relative z-10 space-y-32">
                         <AnimatePresence mode="wait">
-                            {viewMode === 'zones' ? (
+                            {viewMode === 'depts' ? (
+                                <motion.div
+                                    key="depts-view"
+                                    initial={{ opacity: 0 }}
+                                    animate={{ opacity: 1 }}
+                                    exit={{ opacity: 0 }}
+                                    transition={{ duration: 0.5 }}
+                                    className="space-y-32"
+                                >
+                                    {departments.map((dept) => (
+                                        <div key={dept.id} className="relative group">
+                                            <motion.div className="mb-12 pl-6 md:pl-10 border-l-2 border-red-500/30 relative">
+                                                <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-red-500/20 border border-red-500/50" />
+                                                <h2 className="text-3xl md:text-5xl lg:text-7xl font-sans font-black tracking-tighter text-white/90 uppercase">
+                                                    {dept.name}
+                                                </h2>
+                                            </motion.div>
+                                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 pl-0 md:pl-10">
+                                                {dept.events.map((event, idx) => (
+                                                    <EventCard
+                                                        key={event.name}
+                                                        name={event.name}
+                                                        description={event.description}
+                                                        image={event.image}
+                                                        index={idx}
+                                                        category={(event as any).category}
+                                                        code={`// ${dept.slug.substring(0, 3).toUpperCase()}-${String(idx + 1).padStart(2, '0')}`}
+                                                    />
+                                                ))}
+                                            </div>
+                                        </div>
+                                    ))}
+                                </motion.div>
+                            ) : (
                                 <motion.div
                                     key="zones-view"
                                     initial={{ opacity: 0 }}
@@ -248,41 +242,8 @@ export default function BodhiPage() {
                                                         description={event.description}
                                                         image={event.image}
                                                         index={idx}
-                                                        category={(event as any).category || zone.title}
+                                                        category={(event as any).category}
                                                         code={`// ${zone.id.split('-')[0].substring(0, 3).toUpperCase()}-${String(idx + 1).padStart(2, '0')}`}
-                                                    />
-                                                ))}
-                                            </div>
-                                        </div>
-                                    ))}
-                                </motion.div>
-                            ) : (
-                                <motion.div
-                                    key="depts-view"
-                                    initial={{ opacity: 0 }}
-                                    animate={{ opacity: 1 }}
-                                    exit={{ opacity: 0 }}
-                                    transition={{ duration: 0.5 }}
-                                    className="space-y-32"
-                                >
-                                    {groupedByDept.map(([deptName, events], i) => (
-                                        <div key={deptName} className="relative group">
-                                            <motion.div className="mb-12 pl-6 md:pl-10 border-l-2 border-red-500/30 relative">
-                                                <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-red-500/20 border border-red-500/50" />
-                                                <h2 className="text-3xl md:text-5xl lg:text-7xl font-sans font-black tracking-tighter text-white/90 uppercase">
-                                                    {deptName}
-                                                </h2>
-                                            </motion.div>
-                                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 pl-0 md:pl-10">
-                                                {events.map((event, idx) => (
-                                                    <EventCard
-                                                        key={event.name}
-                                                        name={event.name}
-                                                        description={event.description}
-                                                        image={event.image}
-                                                        index={idx}
-                                                        category={(event as any).category || (event as any).zoneTitle}
-                                                        code={`// ${deptName.substring(0, 3).toUpperCase()}-${String(idx + 1).padStart(2, '0')}`}
                                                     />
                                                 ))}
                                             </div>

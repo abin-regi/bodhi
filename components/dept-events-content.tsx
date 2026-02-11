@@ -10,9 +10,10 @@ interface DeptEventsContentProps {
     events: {
         name: string
         description: string
-        registrationUrl: string
+        registrationUrl?: string
         image?: string
         coordinators?: { name: string; phone: string }[]
+        category?: string
     }[]
 }
 
