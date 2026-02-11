@@ -12,37 +12,38 @@ export default function DrishyaEventCard({ name, time, location, index }: Drishy
     const formattedIndex = String(index + 1).padStart(2, "0");
 
     return (
-        <div className="group relative border-l-2 border-white/10 bg-[#0a0a0a] hover:border-red-500 transition-all duration-300 overflow-hidden w-full">
-            {/* Hover background effect */}
-            <div className="absolute inset-0 bg-gradient-to-r from-red-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+        <div className="group relative border border-white/5 bg-[#0a0a0a] hover:border-red-500/30 transition-all duration-300 p-6 flex flex-col gap-4 overflow-hidden">
+            {/* Hover Background Accent */}
+            <div className="absolute inset-0 bg-gradient-to-br from-red-500/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
-            <div className="p-4 flex flex-col gap-3 relative z-10">
-                {/* Row 1: Number & Name */}
-                <div className="flex items-center gap-4">
-                    {/* Circle Number */}
-                    <div className="shrink-0 flex items-center justify-center w-10 h-10 rounded-full border border-white/20 group-hover:border-red-500/50 bg-white/5 transition-colors duration-300">
-                        <span className="font-mono text-sm font-bold text-white/70 group-hover:text-red-500 transition-colors duration-300">
-                            {formattedIndex}
-                        </span>
-                    </div>
+            <div className="flex justify-between items-start relative z-10">
+                <span className="font-mono text-[10px] font-bold text-red-500/60 tracking-[0.3em] uppercase">
+                    #{formattedIndex}
+                </span>
+                <div className="w-1.5 h-1.5 rounded-full bg-red-500/20 group-hover:bg-red-500 transition-colors duration-300" />
+            </div>
 
-                    {/* Event Name */}
-                    <h3 className="text-lg md:text-xl font-sans font-bold text-white tracking-tight leading-tight truncate">
-                        {name}
-                    </h3>
+            <div className="relative z-10">
+                <h3 className="text-xl md:text-2xl font-sans font-black text-white tracking-tight leading-[1.1] group-hover:text-red-500 transition-colors duration-300">
+                    {name}
+                </h3>
+            </div>
+
+            <div className="flex flex-col gap-3 border-t border-white/5 pt-5 relative z-10">
+                <div className="flex items-center gap-3 text-xs md:text-sm font-mono text-white/40 group-hover:text-white/60 transition-colors duration-300">
+                    <MapPin className="w-3.5 h-3.5 md:w-4 md:h-4 text-red-500/50" />
+                    <span className="truncate tracking-wide">{location}</span>
                 </div>
-
-                {/* Row 2: Location & Time */}
-                <div className="flex flex-row gap-4 text-xs md:text-sm font-mono text-white/50 items-center pl-[3.5rem]">
-                    <div className="flex items-center gap-2 min-w-0">
-                        <MapPin className="w-3 h-3 md:w-4 md:h-4 text-red-500/70 shrink-0" />
-                        <span className="truncate">{location}</span>
-                    </div>
-                    <div className="flex items-center gap-2 min-w-0">
-                        <Clock className="w-3 h-3 md:w-4 md:h-4 text-red-500/70 shrink-0" />
-                        <span className="truncate whitespace-nowrap">{time}</span>
-                    </div>
+                <div className="flex items-center gap-3 text-xs md:text-sm font-mono text-white/40 group-hover:text-white/60 transition-colors duration-300">
+                    <Clock className="w-3.5 h-3.5 md:w-4 md:h-4 text-red-500/50" />
+                    <span className="truncate tracking-wide">{time}</span>
                 </div>
+            </div>
+
+            {/* Corner accent */}
+            <div className="absolute top-0 right-0 w-8 h-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                <div className="absolute top-0 right-0 w-full h-[1px] bg-red-500" />
+                <div className="absolute top-0 right-0 h-full w-[1px] bg-red-500" />
             </div>
         </div>
     )

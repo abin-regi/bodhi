@@ -63,7 +63,7 @@ export default function BodhiPage() {
                 {/* ═══════════════════════════════════════════ */}
                 {/* HERO SECTION                               */}
                 {/* ═══════════════════════════════════════════ */}
-                <section className="relative min-h-[70vh] md:min-h-[80vh] flex flex-col items-center justify-center overflow-hidden pt-24 pb-8 lg:pt-0">
+                <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden py-20">
 
                     {/* Grid background */}
                     <div className="absolute inset-0 opacity-[0.04]"
@@ -121,7 +121,7 @@ export default function BodhiPage() {
 
                         {/* Description */}
                         <motion.p
-                            className="text-xs sm:text-sm md:text-base font-mono text-white/60 mt-8 md:mt-10 max-w-lg mx-auto leading-relaxed px-2"
+                            className="text-xs sm:text-sm md:text-base font-mono text-white/60 mt-12 md:mt-16 max-w-lg mx-auto leading-relaxed px-2"
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ duration: 0.8, delay: 0.3 }}
@@ -133,7 +133,7 @@ export default function BodhiPage() {
 
                         {/* Stats — Adjusted for Zones */}
                         <motion.div
-                            className="mt-8 md:mt-10 flex items-center justify-center gap-5 md:gap-8"
+                            className="mt-12 md:mt-16 flex items-center justify-center gap-5 md:gap-8"
                             initial={{ opacity: 0, y: 10 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.6, delay: 0.5 }}
