@@ -1,6 +1,5 @@
 import Navbar from "@/components/navbar"
 import DrishyaHero from "@/components/drishya-hero"
-import DrishyaScrollStack from "@/components/DrishyaScrollStack"
 import DrishyaEventCard from "@/components/drishya-event-card"
 import Footer from "@/components/footer"
 import { artsEvents } from "@/lib/events-data"
@@ -12,9 +11,6 @@ export default function DrishyaPage() {
             <Navbar />
 
             <DrishyaHero />
-
-            <DrishyaScrollStack />
-
             <ImageAutoSlider />
 
             {/* Events Sections */}
