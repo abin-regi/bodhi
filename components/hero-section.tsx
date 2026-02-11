@@ -36,7 +36,7 @@ export default function HeroSection() {
         <div className="mt-4 md:mt-6 flex items-center justify-center gap-4 md:gap-6">
           <span className="h-px w-12 bg-white/10" />
           <p className="text-sm md:text-lg font-mono tracking-[0.2em] text-white/50">
-            OCTOBER 24, 25, 26
+            FEBRUARY 25, 26, 27, 28
           </p>
           <span className="h-px w-12 bg-white/10" />
         </div>
