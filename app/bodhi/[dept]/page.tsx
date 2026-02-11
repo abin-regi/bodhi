@@ -23,7 +23,8 @@ export default async function DeptEventsPage({ params }: DeptPageProps) {
         notFound()
     }
 
-    const events = technicalEvents[deptSlug] || []
+    const events = department.events
+
 
     return (
         <main className="relative bg-[#050505] lg:pl-16 min-h-screen">
