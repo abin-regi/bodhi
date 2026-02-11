@@ -1,4 +1,4 @@
-import Navbar from "@/components/navbar"
+
 import HeroSection from "@/components/hero-section"
 import ScrollIndicator from "@/components/scroll-indicator"
 import EventsSection from "@/components/events-section"
@@ -18,8 +18,7 @@ export default function Page() {
     <>
       <CustomCursor />
       <Scene3DBackground />
-      <main className="relative z-10 lg:pl-16">
-        <Navbar />
+      <main className="relative z-10">
         <div className="relative">
           <HeroSection />
         </div>

@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation"
-import Navbar from "@/components/navbar"
+
 import Footer from "@/components/footer"
 import DeptEventsContent from "@/components/dept-events-content"
 import { departments, technicalEvents } from "@/lib/events-data"
@@ -27,8 +27,7 @@ export default async function DeptEventsPage({ params }: DeptPageProps) {
 
 
     return (
-        <main className="relative bg-[#050505] lg:pl-16 min-h-screen">
-            <Navbar />
+        <main className="relative bg-[#050505] min-h-screen">
             <DeptEventsContent department={department} events={events} />
             <Footer />
         </main>

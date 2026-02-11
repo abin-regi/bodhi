@@ -1,4 +1,4 @@
-import Navbar from "@/components/navbar"
+
 import DrishyaHero from "@/components/drishya-hero"
 import DrishyaEventCard from "@/components/drishya-event-card"
 import Footer from "@/components/footer"
@@ -7,8 +7,7 @@ import { ImageAutoSlider } from "@/components/ui/image-auto-slider"
 
 export default function DrishyaPage() {
     return (
-        <main className="relative bg-[#050505] lg:pl-16 min-h-screen">
-            <Navbar />
+        <main className="relative bg-[#050505] min-h-screen">
 
             <DrishyaHero />
             <ImageAutoSlider />
