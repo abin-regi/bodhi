@@ -4,6 +4,8 @@ import { Space_Grotesk, JetBrains_Mono, Cinzel } from 'next/font/google'
 import localFont from 'next/font/local'
 import SmoothScroll from "@/components/smooth-scroll"
 
+
+
 import './globals.css'
 
 const spaceGrotesk = Space_Grotesk({

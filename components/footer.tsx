@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { FaInstagram } from "react-icons/fa";
+import { FaInstagram, FaArrowRight } from "react-icons/fa";
 
 export default function Footer() {
     return (
@@ -32,9 +32,13 @@ export default function Footer() {
                                 BODHI
                             </h3>
                         </div>
-                        <p className="text-red-500 font-cinzel text-sm md:text-base tracking-wide">
+                        <p className="text-red-500 font-cinzel text-sm md:text-base tracking-wide mb-3">
                             THE FIRE RETURNS.
                         </p>
+                        <Link href="/bodhi" className="flex items-center gap-2 text-white/70 hover:text-red-500 transition-colors duration-300 group">
+                            <span className="font-cinzel text-xs tracking-wider uppercase">View Bodhi</span>
+                            <FaArrowRight className="w-3 h-3 transform group-hover:translate-x-1 transition-transform" />
+                        </Link>
                     </div>
 
                     {/* Drishya Section */}
@@ -51,9 +55,13 @@ export default function Footer() {
                                 DRISHYA
                             </h3>
                         </div>
-                        <p className="text-red-500 font-cinzel text-sm md:text-base tracking-wide">
+                        <p className="text-red-500 font-cinzel text-sm md:text-base tracking-wide mb-3">
                             THE SACRED AWAKENING BEGINS.
                         </p>
+                        <Link href="/drishya" className="flex items-center gap-2 text-white/70 hover:text-red-500 transition-colors duration-300 group">
+                            <span className="font-cinzel text-xs tracking-wider uppercase">View Drishya</span>
+                            <FaArrowRight className="w-3 h-3 transform group-hover:translate-x-1 transition-transform" />
+                        </Link>
                     </div>
                 </div>
 
