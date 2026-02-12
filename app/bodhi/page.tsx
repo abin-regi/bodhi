@@ -1,10 +1,8 @@
 "use client"
 
-import Footer from "@/components/footer"
+import Footer from "@/components/Footer"
 import CustomCursor from "@/components/custom-cursor"
 import EventCard from "@/components/event-card"
-import EnhancedFireEffects from "@/components/enhanced-fire-effects"
-import MentalistSection from "@/components/mentalist-section"
 import { departments, eventZones } from "@/lib/events-data"
 import { motion, AnimatePresence } from "framer-motion"
 import { useState } from "react"
@@ -38,9 +36,6 @@ export default function BodhiPage() {
 
                     {/* Dark gradient overlay for text readability */}
                     <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-[#050505]" />
-
-                    {/* Enhanced Fire Effects */}
-                    <EnhancedFireEffects />
 
                     {/* Grid background */}
                     <div className="absolute inset-0 opacity-[0.04]"
@@ -193,37 +188,6 @@ export default function BodhiPage() {
                 <div className="relative h-px w-full">
                     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-red-500/40 to-transparent" />
                 </div>
-
-                {/* ═══════════════════════════════════════════ */}
-                {/* BANNER IMAGE SECTION                       */}
-                {/* ═══════════════════════════════════════════ */}
-                <section className="relative w-full">
-                    <div className="relative w-full overflow-hidden">
-                        {/* Full Screen Responsive Image */}
-                        <img
-                            src="/images/bodhi-banner.jpeg"
-                            alt="Bodhi Event Banner"
-                            className="w-full h-auto"
-                            style={{
-                                objectFit: 'contain',
-                                display: 'block'
-                            }}
-                        />
-
-                        {/* Optional: Subtle overlay for consistency */}
-                        <div className="absolute inset-0 bg-gradient-to-t from-[#050505]/20 to-transparent pointer-events-none" />
-                    </div>
-                </section>
-
-                {/* Red divider */}
-                <div className="relative h-px w-full">
-                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-red-500/40 to-transparent" />
-                </div>
-
-                {/* ═══════════════════════════════════════════ */}
-                {/* MENTALIST SECTION - Rotating Ring          */}
-                {/* ═══════════════════════════════════════════ */}
-                <MentalistSection />
 
                 {/* Red divider */}
                 <div className="relative h-px w-full">

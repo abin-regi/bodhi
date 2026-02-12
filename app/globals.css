@@ -239,3 +239,94 @@ html {
   animation: float-sparkle-2 5s ease-in-out infinite;
   animation-delay: 2s;
 }
+
+/* Spin Slow Animation */
+@keyframes spinSlow {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spinSlow {
+  animation: spinSlow 25s linear infinite;
+}
+
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 15s linear infinite;
+}
+
+
+@keyframes subtleFlicker {
+  0% {
+    opacity: 1;
+    text-shadow: 0 0 6px rgba(255, 0, 0, 0.4);
+  }
+
+  5% {
+    opacity: 0.95;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
+  }
+
+  10% {
+    opacity: 1;
+    text-shadow: 0 0 6px rgba(255, 0, 0, 0.4);
+  }
+
+  15% {
+    opacity: 0.97;
+    text-shadow: 0 0 14px rgba(255, 0, 0, 0.7);
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  40% {
+    opacity: 0.96;
+    text-shadow: 0 0 8px rgba(255, 0, 0, 0.5);
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 0.98;
+    text-shadow: 0 0 12px rgba(255, 0, 0, 0.6);
+  }
+
+  100% {
+    opacity: 1;
+    text-shadow: 0 0 6px rgba(255, 0, 0, 0.4);
+  }
+}
+
+.flicker-text {
+  animation: subtleFlicker 3s infinite ease-in-out;
+}
+
+
+.aura-glow {
+  color: #ffd700;
+  text-shadow:
+    0 0 6px rgba(255, 215, 0, 0.6),
+    0 0 12px rgba(255, 200, 0, 0.7),
+    0 0 20px rgba(255, 180, 0, 0.8);
+}

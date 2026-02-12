@@ -1,7 +1,7 @@
 
 import DrishyaHero from "@/components/drishya-hero"
 import DrishyaEventCard from "@/components/drishya-event-card"
-import Footer from "@/components/footer"
+import Footer from "@/components/Footer"
 import { artsEvents } from "@/lib/events-data"
 import { ImageAutoSlider } from "@/components/ui/image-auto-slider"
 

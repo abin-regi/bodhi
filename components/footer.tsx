@@ -1,105 +1,94 @@
-import { MapPin } from "lucide-react"
+"use client";
 
-const footerLinks = [
-  { label: "Home", href: "#home" },
-  { label: "Explore", href: "#explore" },
-  { label: "RoboWars", href: "#robowars" },
-  { label: "Passes", href: "#passes" },
-  { label: "Pronite", href: "#pronite" },
-  { label: "Wheels", href: "#wheels" },
-  { label: "GPC", href: "#gpc" },
-  { label: "Expo", href: "#expo" },
-]
+import Image from "next/image";
+import Link from "next/link";
+import { FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
-  return (
-    <footer className="relative bg-[#050505] border-t border-white/5">
-      <div className="max-w-7xl mx-auto lg:ml-20 px-4 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-          {/* Brand */}
-          <div>
-            <h3 className="text-3xl font-sans font-bold text-white tracking-tighter">BODHI x Drishya</h3>
-            <p className="text-[10px] font-mono text-white/20 tracking-[0.3em] mt-2">
-              {"ANNUAL TECHNO-MANAGEMENT FEST"}
-            </p>
-            <p className="text-[10px] font-mono text-red-500/40 tracking-[0.2em] mt-1">
-              VISWAJYOTHI COLLEGE OF ENGG. & TECH.
-            </p>
-
-            <div className="mt-6 flex items-center gap-2 text-white/20">
-              <MapPin className="w-3 h-3" />
-              <span className="text-[10px] font-mono tracking-widest">
-                {"VAZHAKULAM, KERALA"}
-              </span>
+    return (
+        <footer className="relative w-full bg-black text-white overflow-hidden">
+            {/* Large Background Text */}
+            <div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-5">
+                <h2 className="font-cinzel font-bold text-6xl md:text-8xl lg:text-9xl tracking-widest text-white whitespace-nowrap">
+                    BODHI X DRISHYA
+                </h2>
             </div>
-          </div>
 
-          {/* Links */}
-          <div>
-            <p className="text-[10px] font-mono text-white/30 tracking-[0.3em] mb-4">
-              NAVIGATE
-            </p>
-            <div className="grid grid-cols-2 gap-2">
-              {footerLinks.map((link) => (
-                <a
-                  key={link.label}
-                  href={link.href}
-                  className="text-sm font-mono text-white/20 hover:text-red-500/70 transition-colors tracking-wider"
-                >
-                  {link.label}
-                </a>
-              ))}
+            {/* Main Footer Content */}
+            <div className="relative z-10 max-w-7xl mx-auto px-6 py-16">
+                {/* Bodhi and Drishya Sections */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                    {/* Bodhi Section */}
+                    <div className="flex flex-col items-center md:items-start">
+                        <div className="flex items-center gap-2 mb-2">
+                            <Image
+                                src="/images/home/bodhilogo.png"
+                                alt="Bodhi Logo"
+                                width={35}
+                                height={35}
+                                className="object-contain"
+                            />
+                            <h3 className="font-cinzel text-lg md:text-xl tracking-wider">
+                                BODHI
+                            </h3>
+                        </div>
+                        <p className="text-red-500 font-cinzel text-sm md:text-base tracking-wide">
+                            THE FIRE RETURNS.
+                        </p>
+                    </div>
+
+                    {/* Drishya Section */}
+                    <div className="flex flex-col items-center md:items-start">
+                        <div className="flex items-center gap-2 mb-2">
+                            <Image
+                                src="/images/home/drishyalogo.png"
+                                alt="Drishya Logo"
+                                width={35}
+                                height={35}
+                                className="object-contain"
+                            />
+                            <h3 className="font-cinzel text-lg md:text-xl tracking-wider">
+                                DRISHYA
+                            </h3>
+                        </div>
+                        <p className="text-red-500 font-cinzel text-sm md:text-base tracking-wide">
+                            THE SACRED AWAKENING BEGINS.
+                        </p>
+                    </div>
+                </div>
+
+                {/* Social Section */}
+                <div className="flex flex-col items-center gap-4 mb-6">
+                    <h4 className="font-cinzel text-sm tracking-wider text-gray-400 uppercase">
+                        Social
+                    </h4>
+                    <Link
+                        href="https://www.instagram.com/bodhi.vjcet?igsh=MTM0c2Fma2JyeHA2cA=="
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-white hover:text-red-500 transition-colors duration-300"
+                    >
+                        <FaInstagram size={24} />
+                    </Link>
+                </div>
+
+                {/* Architectured By */}
+                <div className="text-center mb-6">
+                    <p className="font-cinzel text-xs md:text-sm tracking-wide text-gray-500">
+                        ARCHITECTURED BY VJCET MEDIA TEAM 2026
+                    </p>
+                </div>
+
+                {/* Divider */}
+                <div className="w-full h-px bg-gray-800 mb-4"></div>
+
+                {/* Copyright */}
+                <div className="text-center">
+                    <p className="text-xs text-gray-500">
+                        © 2026 BODHI x DRISHYA. All rights reserved.
+                    </p>
+                </div>
             </div>
-          </div>
-
-          {/* Contact */}
-          <div>
-            <p className="text-[10px] font-mono text-white/30 tracking-[0.3em] mb-4">
-              CONNECT
-            </p>
-            <div className="space-y-3">
-              <p className="text-xs font-mono text-white/20">
-                Viswajyothi College of Engineering and Technology
-              </p>
-              <p className="text-xs font-mono text-white/20">
-                Vazhakulam, Muvattupuzha, Kerala 686670
-              </p>
-              <a
-                href="https://www.vjcet.org"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-xs font-mono text-red-500/50 hover:text-red-500 transition-colors inline-block mt-2"
-              >
-                www.vjcet.org
-              </a>
-            </div>
-          </div>
-        </div>
-
-        {/* Bottom bar */}
-        <div className="mt-16 pt-6 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-[9px] font-mono text-white/15 tracking-widest">
-            {"BODHI x Drishya \u00A9 2025 VJCET. ALL RIGHTS RESERVED."}
-          </p>
-          <div className="flex items-center gap-6">
-            {["Instagram", "Twitter", "LinkedIn", "YouTube"].map((social) => (
-              <span
-                key={social}
-                className="text-[9px] font-mono text-white/15 tracking-widest hover:text-red-500/50 transition-colors cursor-pointer uppercase"
-              >
-                {social}
-              </span>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      {/* Large background text */}
-      <div className="absolute bottom-0 left-0 right-0 overflow-hidden pointer-events-none">
-        <p className="text-[8rem] md:text-[14rem] font-sans font-bold text-white/[0.015] tracking-tighter leading-none text-center -mb-12 md:-mb-20 select-none">
-          BODHI x Drishya
-        </p>
-      </div>
-    </footer>
-  )
+        </footer>
+    );
 }
