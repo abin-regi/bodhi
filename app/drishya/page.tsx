@@ -4,10 +4,12 @@ import DrishyaEventCard from "@/components/drishya-event-card"
 import Footer from "@/components/SiteFooter"
 import { artsEvents } from "@/lib/events-data"
 import { ImageAutoSlider } from "@/components/ui/image-auto-slider"
+import MenuButton from "@/components/MenuButton"
 
 export default function DrishyaPage() {
     return (
         <main className="relative bg-[#050505] min-h-screen">
+            <MenuButton />
 
             <DrishyaHero />
             <ImageAutoSlider />
