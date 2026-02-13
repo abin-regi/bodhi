@@ -509,6 +509,17 @@ export const eventZones = [
                     { name: "Sreehari P S", phone: "9061821037" },
                     { name: "Jerin Shaji", phone: "9544061389" }
                 ]
+            },
+            {
+                name: "AI VisionX",
+                category: "WORKSHOP",
+                dept: "CSD",
+                description: "Step into the world of AI-generated visuals with AI VisionX. Learn how to craft reels, stories, and cinematic videos using powerful GenAI tools.",
+                image: "/images/events/vision.png",
+                coordinators: [
+                    { name: "Alwin Lal", phone: "9744531108" },
+                    { name: "Kevin Joseph", phone: "9074611663" }
+                ]
             }
         ]
     },

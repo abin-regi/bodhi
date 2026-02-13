@@ -7,6 +7,7 @@ import { departments, eventZones } from "@/lib/events-data"
 import { motion, AnimatePresence } from "framer-motion"
 import { useState } from "react"
 import { LayoutGrid, Building2 } from "lucide-react"
+import MenuButton from "@/components/MenuButton"
 
 
 export default function BodhiPage() {
@@ -18,6 +19,7 @@ export default function BodhiPage() {
     return (
         <>
             <CustomCursor />
+            <MenuButton />
             <main className="relative bg-[#050505] min-h-screen">
 
                 {/* ═══════════════════════════════════════════ */}
