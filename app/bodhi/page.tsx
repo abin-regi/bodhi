@@ -1,6 +1,6 @@
 "use client"
 
-import Footer from "@/components/Footer"
+import Footer from "@/components/SiteFooter"
 import CustomCursor from "@/components/custom-cursor"
 import EventCard from "@/components/event-card"
 import { departments, eventZones } from "@/lib/events-data"

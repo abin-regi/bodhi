@@ -8,7 +8,7 @@ import Mototorque from "@/components/Mototorque"
 import MentalistSection from "@/components/MentalistSection"
 import Churam from "@/components/Churam"
 import FejoSection from "@/components/FejoSection"
-import Footer from "@/components/Footer"
+import Footer from "@/components/SiteFooter"
 
 export default function Page() {
   return (

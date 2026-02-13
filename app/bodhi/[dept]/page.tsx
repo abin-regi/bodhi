@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation"
 
-import Footer from "@/components/Footer"
+import Footer from "@/components/SiteFooter"
 import DeptEventsContent from "@/components/dept-events-content"
 import { departments, technicalEvents } from "@/lib/events-data"
 
