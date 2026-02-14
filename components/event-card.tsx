@@ -35,7 +35,7 @@ export default function EventCard({
             <motion.div
                 initial="initial"
                 whileHover="hover"
-                className="relative h-[480px] w-full bg-[#050505] overflow-hidden border border-white/5 cursor-pointer"
+                className="relative h-[300px] md:h-[480px] w-full bg-[#050505] overflow-hidden border border-white/5 cursor-pointer"
             >
                 {/* 1. BACKGROUND IMAGE & OVERLAYS */}
                 <div className="absolute inset-0 z-0">
@@ -74,7 +74,7 @@ export default function EventCard({
                     className="absolute right-0 top-0 bottom-0 w-1 bg-red-600 z-20"
                 />
 
-                <div className="relative z-10 flex flex-col h-full p-6 md:p-8">
+                <div className="relative z-10 flex flex-col h-full p-3 md:p-8">
                     <div className="flex justify-between items-start">
                         <motion.div
                             variants={{
@@ -98,7 +98,7 @@ export default function EventCard({
                                 initial: { x: 0 },
                                 hover: { x: 4 }
                             }}
-                            className="text-3xl md:text-4xl font-black font-sans text-white uppercase leading-[0.9] tracking-tighter mix-blend-screen"
+                            className="text-lg md:text-3xl lg:text-4xl font-black font-sans text-white uppercase leading-[0.9] tracking-tighter mix-blend-screen"
                         >
                             {name}
                         </motion.h3>
@@ -118,7 +118,7 @@ export default function EventCard({
                                 initial: { color: "rgba(239, 68, 68, 0.6)" },
                                 hover: { color: "rgba(239, 68, 68, 1)" }
                             }}
-                            className="font-mono text-[10px] tracking-[0.2em]"
+                            className="font-mono text-[8px] md:text-[10px] tracking-[0.2em]"
                         >
                             {displayCode}
                         </motion.span>
@@ -137,6 +137,6 @@ export default function EventCard({
                     </div>
                 </div>
             </motion.div>
-        </Link>
+        </Link >
     )
 }

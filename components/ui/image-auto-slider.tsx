@@ -64,17 +64,16 @@ export const ImageAutoSlider = () => {
                 {/* Scrolling images container */}
                 <div className="relative z-10 w-full flex items-center justify-center py-8">
                     <div className="scroll-container w-full max-w-full">
-                        <div className="infinite-scroll flex gap-8 w-max">
+                        <div className="infinite-scroll flex w-max">
                             {duplicatedImages.map((image, index) => (
                                 <div
                                     key={index}
-                                    className="image-item flex-shrink-0 w-72 h-48 md:w-96 md:h-64 lg:w-[32rem] lg:h-80 rounded-xl overflow-hidden shadow-2xl"
+                                    className="image-item flex-shrink-0 w-72 h-48 md:w-96 md:h-64 lg:w-[32rem] lg:h-80 rounded-xl overflow-hidden shadow-2xl mr-8"
                                 >
                                     <img
                                         src={image}
                                         alt={`Gallery image ${(index % images.length) + 1}`}
                                         className="w-full h-full object-cover"
-                                        loading="lazy"
                                     />
                                 </div>
                             ))}

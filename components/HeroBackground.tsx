@@ -12,6 +12,25 @@ export default function HeroSection() {
 
     return (
         <section className="relative min-h-[100svh] w-full overflow-hidden bg-black">
+            {/* 🔥 Logos Top Left */}
+            <div className="absolute top-3 left-3 sm:top-5 sm:left-5 z-50 flex items-center gap-1 sm:gap-2 opacity-90">
+                <Image
+                    src="/images/home/bodhilogo.png"
+                    alt="Bodhi Logo"
+                    width={80}
+                    height={80}
+                    className="w-8 h-8 sm:w-8 sm:h-8 object-contain"
+                />
+                <span className="font-cinzel text-base sm:text-xl pt-2 bg-gradient-to-b from-[#8b0000] to-black bg-clip-text text-transparent">X</span>
+                <Image
+                    src="/images/home/drishyalogo.png"
+                    alt="Drishya Logo"
+                    width={80}
+                    height={80}
+                    className="w-6 h-6 sm:w-6 sm:h-6 object-contain"
+                />
+            </div>
+
             {/* 🔥 Navigation Menu */}
             <MenuButton />
 
@@ -40,29 +59,21 @@ export default function HeroSection() {
                 z-20
             ">
                 {/* VJCET Capsule */}
+                {/* VJCET Banner */}
                 <motion.div
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
-                    className="
-                    inline-block
-                    border border-[#8b0000]/50
-                    rounded-full
-                    px-3 py-1 sm:px-4 sm:py-1.5
-                    mb-4 sm:mb-6
-                    bg-black/20
-                    backdrop-blur-sm
-                ">
-                    <span className="
-                        font-cinzel
-                        text-[#8b0000]
-                        text-[8px] sm:text-[10px] md:text-xs
-                        uppercase
-                        tracking-[0.2em]
-                        font-semibold
-                    ">
-                        VJCET Presents
-                    </span>
+                    className="mb-4 sm:mb-6 flex justify-center"
+                >
+                    <Image
+                        src="/images/home/vjcet full banner.png"
+                        alt="VJCET Banner"
+                        width={300}
+                        height={100}
+                        className="h-6 sm:h-7 md:h-9 w-auto object-contain opacity-90 drop-shadow-[0_0_10px_rgba(220,38,38,0.3)]"
+                        priority
+                    />
                 </motion.div>
 
                 {/* BODHI */}
@@ -146,6 +157,7 @@ export default function HeroSection() {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 1, delay: 2.5 }}
+                    className="mt-60 sm:mt-0"
                 >
                     <Tagline />
                 </motion.div>
@@ -155,7 +167,7 @@ export default function HeroSection() {
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, delay: 3.0 }}
-                    className="mt-4 sm:mt-6"
+                    className="mt-6 sm:mt-5 flex flex-col items-center gap-4"
                 >
                     <p className="
                         font-cinzel
@@ -166,6 +178,35 @@ export default function HeroSection() {
                     ">
                         Feb 25-28
                     </p>
+
+                    {/* Explore & Arrow */}
+                    <div className="flex flex-col items-center gap-1 mt-1">
+                        <span className="font-cinzel text-yellow-500/80 text-[10px] sm:text-sm tracking-[0.2em]">
+                            Explore
+                        </span>
+                        <motion.div
+                            animate={{ y: [0, 5, 0] }}
+                            transition={{
+                                duration: 2,
+                                repeat: Infinity,
+                                ease: "easeInOut"
+                            }}
+                        >
+                            <svg
+                                className="w-4 h-4 text-red-500"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 30 30"
+                            >
+                                <path
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth={2}
+                                    d="M19 14l-7 7m0 0l-7-7m7 7V3"
+                                />
+                            </svg>
+                        </motion.div>
+                    </div>
                 </motion.div>
             </div>
 
