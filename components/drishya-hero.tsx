@@ -1,27 +1,26 @@
 "use client"
 
-import LightPillar from './LightPillar'
+import Image from "next/image"
 
 export default function DrishyaHero() {
     return (
-        <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#050505] pt-20 lg:pt-0">
-            {/* Light Pillar Background */}
-            <div style={{ width: '100%', height: '100%', position: 'absolute', top: 0, left: 0 }}>
-                <LightPillar
-                    topColor="#c11551"
-                    bottomColor="#cd0e0e"
-                    intensity={1}
-                    rotationSpeed={0.3}
-                    glowAmount={0.002}
-                    pillarWidth={3}
-                    pillarHeight={0.4}
-                    noiseIntensity={0.5}
-                    pillarRotation={25}
-                    interactive={false}
-                    mixBlendMode="screen"
-                    quality="high"
+        <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black pt-20 lg:pt-0">
+            {/* Simple Black Background */}
+            <div className="absolute inset-0 bg-black" />
+
+            {/* Background Image - Half Face */}
+            <div className="absolute inset-y-0 left-0 h-full w-auto z-0 opacity-40 mix-blend-screen pointer-events-none select-none">
+                <Image
+                    src="/images/drishya/halfface.png"
+                    alt="Drishya Artistic Face"
+                    width={800}
+                    height={1200}
+                    className="h-full w-auto object-cover object-left"
+                    priority
                 />
             </div>
+
+
 
             {/* Content */}
             <div className="relative z-10 text-center px-4">

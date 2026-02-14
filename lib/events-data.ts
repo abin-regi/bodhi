@@ -14,6 +14,9 @@ export const departments = [
                 dept: "AI & DS",
                 description: "A next-gen tech mystery hunt challenging teams to decode patterns, interpret hidden systems, and uncover layered clues.",
                 image: "/images/events/coderift.png",
+                prize: "TBA",
+                fee: "TBA",
+                formLink: "#",
                 date: "Feb 28",
                 time: "10:00 AM",
                 teamSize: "2-4 Members",
@@ -28,6 +31,12 @@ export const departments = [
                 dept: "AI & DS",
                 description: "A high-intensity, time-based team challenge blending rapid mini-games with competitive PS5 and PC gameplay.",
                 image: "/images/events/framedrop.jpeg",
+                prize: "TBA",
+                fee: "TBA",
+                formLink: "#",
+                date: "Feb 28",
+                time: "10:00 AM",
+                teamSize: "2-4 Members",
                 coordinators: [
                     { name: "Adithyan K", phone: "9746368321" },
                     { name: "Sidharth S", phone: "8547219502" }
@@ -53,6 +62,7 @@ export const departments = [
                 ],
                 prize: 15000,
                 fee: 400,
+                formLink: "#",
                 teamSize: "2-4 Members",
                 rules: [
                     "Teams should bring their own laptops and hardware kits.",
@@ -67,6 +77,9 @@ export const departments = [
                 dept: "CSE",
                 description: "A three level technical competition consisting file decryption, technical quizzes, and a final startup pitch.",
                 image: "/images/events/techarena.jpeg",
+                prize: "TBA",
+                fee: "TBA",
+                formLink: "#",
                 coordinators: [
                     { name: "Sarah Swetha Thomas", phone: "8714793842" },
                     { name: "Eldho Aby", phone: "8281469701" }
@@ -78,6 +91,9 @@ export const departments = [
                 dept: "CSE",
                 description: "A theme based treasure hunt event where participants solve puzzles, follow clues and survive multiple elimination rounds.",
                 image: "/images/events/strangerthings.jpeg",
+                prize: "TBA",
+                fee: "TBA",
+                formLink: "#",
                 coordinators: [
                     { name: "Deon Johny", phone: "9188083702" },
                     { name: "Keerthana K Anil", phone: "7306749927" }
@@ -89,6 +105,9 @@ export const departments = [
                 dept: "CSE",
                 description: "A creative tech inspired competition involving puzzle challenges, prompt making, and a final craft and quiz fusion round.",
                 image: "/images/events/quirkquest.jpeg",
+                prize: "TBA",
+                fee: "TBA",
+                formLink: "#",
                 coordinators: [
                     { name: "Neethu Cheriyan", phone: "9188654452" },
                     { name: "Brijil Thengumthottathil", phone: "9895107690" }
@@ -108,6 +127,9 @@ export const departments = [
                 dept: "CSD",
                 description: "One-stop destination for unlimited fun. A vibrant space filled with games, challenges, and endless excitement.",
                 image: "/images/events/fun.png",
+                prize: "TBA",
+                fee: "TBA",
+                formLink: "#",
                 coordinators: [
                     { name: "Lewin Johnson", phone: "9656843500" },
                     { name: "Job T Inchanattu", phone: "9745340304" }
@@ -119,6 +141,9 @@ export const departments = [
                 dept: "CSD",
                 description: "Step into the world of AI-generated visuals with AI VisionX. Learn how to craft reels, stories, and cinematic videos using powerful GenAI tools.",
                 image: "/images/events/vision.png",
+                prize: "TBA",
+                fee: "TBA",
+                formLink: "#",
                 coordinators: [
                     { name: "Alwin Lal", phone: "9744531108" },
                     { name: "Kevin Joseph", phone: "9074611663" }
@@ -138,6 +163,9 @@ export const departments = [
                 dept: "IT",
                 description: "Full-day experience learning to think like attackers. Recon → Exploitation → Reporting with live demos and CTF.",
                 image: "/images/events/penetration.png",
+                prize: "TBA",
+                fee: "TBA",
+                formLink: "#",
                 coordinators: [
                     { name: "Abhijit Shaji", phone: "9526494491" },
                     { name: "Nivin K Sunil", phone: "8714930113" }
@@ -149,6 +177,9 @@ export const departments = [
                 dept: "IT",
                 description: "Hands-on workshop introducing drone technology fundamentals, real-world uses, safety, and live flight demos.",
                 image: "/images/events/drone.png",
+                prize: "TBA",
+                fee: "TBA",
+                formLink: "#",
                 coordinators: [
                     { name: "Joyal Sojan", phone: "6282657146" },
                     { name: "Anusha Saji", phone: "8547935816" }
@@ -168,6 +199,9 @@ export const departments = [
                 dept: "EEE",
                 description: "A 12-hour hardware-based hackathon where teams design and build innovative hardware–software solutions to real-world problems.",
                 image: "/images/events/eeehack.jpeg",
+                prize: "TBA",
+                fee: "TBA",
+                formLink: "#",
                 coordinators: [
                     { name: "Abraham", phone: "8547436923" },
                     { name: "Ashker", phone: "9946436741" }
@@ -185,6 +219,7 @@ export const departments = [
                 ],
                 prize: 25000,
                 fee: 1000,
+                formLink: "#",
                 teamSize: "Max 5 Members",
                 rules: [
                     "Robots must comply with the 30kg weight category specifications.",
@@ -207,6 +242,9 @@ export const departments = [
                 dept: "ECE",
                 description: "Exciting mini-football tournament featuring teams of three. Fast, dynamic, and action-packed.",
                 image: "/images/events/football.png",
+                prize: "TBA",
+                fee: "TBA",
+                formLink: "#",
                 coordinators: [
                     { name: "Hisham Ebrahim", phone: "9633582362" },
                     { name: "Dheeraj S.M", phone: "8078070248" }
@@ -218,6 +256,9 @@ export const departments = [
                 dept: "ECE",
                 description: "The Project Expo 2026. A stage to showcase innovative and creative engineering solutions, breaking down silos between departments.",
                 image: "/images/events/project.png",
+                prize: "TBA",
+                fee: "TBA",
+                formLink: "#",
                 coordinators: [
                     { name: "Bazil Abee", phone: "7736851614" },
                     { name: "Ryan Ajil", phone: "9946252194" }
@@ -235,8 +276,15 @@ export const departments = [
                 name: "Bridge Building Competition",
                 category: "MECH & MATTER ARENA",
                 dept: "CIVIL",
-                description: "Design and build a model bridge using materials like popsicle sticks within a fixed time.",
+                description: `The Bridge Making Competition is a hands-on engineering challenge where participants design and build a load-bearing bridge using popsicle (ice-cream) sticks and approved adhesives.
+The event evaluates structural strength, efficiency, and smart design through controlled load testing`,
                 image: "/images/events/bridge.png",
+                prize: "5500",
+                fee: "300 per Team",
+                formLink: "#",
+                date: "Feb 26",
+                time: "10:00 AM",
+                teamSize: "1-4 Members",
                 coordinators: [
                     { name: "VINAYAK MANOHARAN", phone: "974638658" },
                     { name: "DELLA MARIYA GEORGE", phone: "9496740039" }
@@ -246,8 +294,11 @@ export const departments = [
                 name: "Concrete Cube Making Competition",
                 category: "MECH & MATTER ARENA",
                 dept: "CIVIL",
-                description: "Prepare and cast concrete cubes using provided materials; winners decided based on compressive strength.",
+                description: "Are you ready to test your engineering instincts?The Concrete Cube Making Competition 2026 – challenges and cast a concrete cube that can withstand maximum compressive strength during testing.Participants will compete in two exciting stages:Stage 1: “Forge Phase” (Preparation Stage)— Teams will design and prepare their concrete mix using materials provided by the college.Stage 2: “Titan Trial” (Testing Stage)— The prepared cubes will undergo professional compressive strength testing. The cube that survives Basic Civil Engineering knowledge is sufficient to participate.",
                 image: "/images/events/cube.png",
+                prize: "TBA",
+                fee: "TBA",
+                formLink: "#",
                 coordinators: [
                     { name: "Mathews Thomas", phone: "7510567627" },
                     { name: "Aswin P Nair", phone: "6238701144" }
@@ -267,6 +318,9 @@ export const departments = [
                 dept: "MECH",
                 description: "3D modeling and design competition.",
                 image: "/images/events/cad.png",
+                prize: "TBA",
+                fee: "TBA",
+                formLink: "#",
                 coordinators: [
                     { name: "Ashika Sathish", phone: "6238356942" },
                     { name: "Jerin Shaji", phone: "9544061389" }
@@ -278,6 +332,9 @@ export const departments = [
                 dept: "MECH",
                 description: "Hands-on workshop on ECU tuning and vehicle performance optimization.",
                 image: "/images/events/ecu.png",
+                prize: "TBA",
+                fee: "TBA",
+                formLink: "#",
                 coordinators: [
                     { name: "Sreehari P S", phone: "9061821037" },
                     { name: "Jerin Shaji", phone: "9544061389" }
@@ -297,6 +354,9 @@ export const departments = [
                 dept: "ROBOTICS",
                 description: "As of now add description and image",
                 image: "/images/events/line.png",
+                prize: "TBA",
+                fee: "TBA",
+                formLink: "#",
                 date: "Feb 27",
                 time: "10:00 AM",
                 teamSize: "2-4 Members",
@@ -329,6 +389,7 @@ export const eventZones = [
                 ],
                 prize: 15000,
                 fee: 400,
+                formLink: "#",
                 teamSize: "2-4 Members",
                 rules: [
                     "Teams should bring their own laptops and hardware kits.",
@@ -343,6 +404,9 @@ export const eventZones = [
                 dept: "EEE",
                 description: "A 12-hour hardware-based hackathon where teams design and build innovative hardware–software solutions to real-world problems.",
                 image: "/images/events/eeehack.jpeg",
+                prize: "TBA",
+                fee: "TBA",
+                formLink: "#",
                 coordinators: [
                     { name: "Abraham", phone: "8547436923" },
                     { name: "Ashker", phone: "9946436741" }
@@ -362,6 +426,9 @@ export const eventZones = [
                 dept: "CSE",
                 description: "A three level technical competition consisting file decryption, technical quizzes, and a final startup pitch.",
                 image: "/images/events/techarena.jpeg",
+                prize: "TBA",
+                fee: "TBA",
+                formLink: "#",
                 coordinators: [
                     { name: "Sarah Swetha Thomas", phone: "8714793842" },
                     { name: "Eldho Aby", phone: "8281469701" }
@@ -373,6 +440,9 @@ export const eventZones = [
                 dept: "CSE",
                 description: "A creative tech inspired competition involving puzzle challenges, prompt making, and a final craft and quiz fusion round.",
                 image: "/images/events/quirkquest.jpeg",
+                prize: "TBA",
+                fee: "TBA",
+                formLink: "#",
                 coordinators: [
                     { name: "Neethu Cheriyan", phone: "9188654452" },
                     { name: "Brijil Thengumthottathil", phone: "9895107690" }
@@ -384,6 +454,9 @@ export const eventZones = [
                 dept: "ECE",
                 description: "The Project Expo 2026. A stage to showcase innovative and creative engineering solutions, breaking down silos between departments.",
                 image: "/images/events/project.png",
+                prize: "TBA",
+                fee: "TBA",
+                formLink: "#",
                 coordinators: [
                     { name: "Bazil Abee", phone: "7736851614" },
                     { name: "Ryan Ajil", phone: "9946252194" }
@@ -401,6 +474,7 @@ export const eventZones = [
                 ],
                 prize: 25000,
                 fee: 1000,
+                formLink: "#",
                 teamSize: "Max 5 Members",
                 rules: [
                     "Robots must comply with the 30kg weight category specifications.",
@@ -414,7 +488,10 @@ export const eventZones = [
                 category: "TECHNICAL",
                 dept: "ROBOTICS",
                 description: "As of now add description and image",
-                image: "/images/events/placeholder.png",
+                image: "/images/events/line.png",
+                prize: "TBA",
+                fee: "TBA",
+                formLink: "#",
                 date: "Feb 27",
                 time: "10:00 AM",
                 teamSize: "2-4 Members",
@@ -437,6 +514,9 @@ export const eventZones = [
                 dept: "AI & DS",
                 description: "A next-gen tech mystery hunt challenging teams to decode patterns, interpret hidden systems, and uncover layered clues.",
                 image: "/images/events/coderift.png",
+                prize: "TBA",
+                fee: "TBA",
+                formLink: "#",
                 coordinators: [
                     { name: "Ansaj", phone: "9895155001" },
                     { name: "Athul", phone: "9645028366" }
@@ -448,6 +528,9 @@ export const eventZones = [
                 dept: "AI & DS",
                 description: "A high-intensity, time-based team challenge blending rapid mini-games with competitive PS5 and PC gameplay.",
                 image: "/images/events/framedrop.jpeg",
+                prize: "TBA",
+                fee: "TBA",
+                formLink: "#",
                 coordinators: [
                     { name: "Adithyan K", phone: "9746368321" },
                     { name: "Sidharth S", phone: "8547219502" }
@@ -470,6 +553,9 @@ export const eventZones = [
                 dept: "ECE",
                 description: "Exciting mini-football tournament featuring teams of three. Fast, dynamic, and action-packed.",
                 image: "/images/events/football.png",
+                prize: "TBA",
+                fee: "TBA",
+                formLink: "#",
                 coordinators: [
                     { name: "Hisham Ebrahim", phone: "9633582362" },
                     { name: "Dheeraj S.M", phone: "8078070248" }
@@ -481,6 +567,9 @@ export const eventZones = [
                 dept: "CSD",
                 description: "One-stop destination for unlimited fun. A vibrant space filled with games, challenges, and endless excitement.",
                 image: "/images/events/fun.png",
+                prize: "TBA",
+                fee: "TBA",
+                formLink: "#",
                 coordinators: [
                     { name: "Lewin Johnson", phone: "9656843500" },
                     { name: "Job T Inchanattu", phone: "9745340304" }
@@ -500,6 +589,9 @@ export const eventZones = [
                 dept: "IT",
                 description: "Full-day experience learning to think like attackers. Recon → Exploitation → Reporting with live demos and CTF.",
                 image: "/images/events/penetration.png",
+                prize: "TBA",
+                fee: "TBA",
+                formLink: "#",
                 coordinators: [
                     { name: "Abhijit Shaji", phone: "9526494491" },
                     { name: "Nivin K Sunil", phone: "8714930113" }
@@ -511,6 +603,9 @@ export const eventZones = [
                 dept: "IT",
                 description: "Hands-on workshop introducing drone technology fundamentals, real-world uses, safety, and live flight demos.",
                 image: "/images/events/drone.png",
+                prize: "TBA",
+                fee: "TBA",
+                formLink: "#",
                 coordinators: [
                     { name: "Joyal Sojan", phone: "6282657146" },
                     { name: "Anusha Saji", phone: "8547935816" }
@@ -522,6 +617,9 @@ export const eventZones = [
                 dept: "CSD",
                 description: "Hands-on workshop focused on graphic design and video editing to master visual creativity.",
                 image: "/images/events/fun.png",
+                prize: "TBA",
+                fee: "TBA",
+                formLink: "#",
                 coordinators: [
                     { name: "Alwin Lal", phone: "9744531108" },
                     { name: "Kevin Joseph", phone: "9074611663" }
@@ -533,6 +631,9 @@ export const eventZones = [
                 dept: "MECH",
                 description: "3D modeling and design competition.",
                 image: "/images/events/cad.png",
+                prize: "TBA",
+                fee: "TBA",
+                formLink: "#",
                 coordinators: [
                     { name: "Ashika Sathish", phone: "6238356942" },
                     { name: "Jerin Shaji", phone: "9544061389" }
@@ -544,6 +645,9 @@ export const eventZones = [
                 dept: "MECH",
                 description: "Hands-on workshop on ECU tuning and vehicle performance optimization.",
                 image: "/images/events/ecu.png",
+                prize: "TBA",
+                fee: "TBA",
+                formLink: "#",
                 coordinators: [
                     { name: "Sreehari P S", phone: "9061821037" },
                     { name: "Jerin Shaji", phone: "9544061389" }
@@ -555,6 +659,9 @@ export const eventZones = [
                 dept: "CSD",
                 description: "Step into the world of AI-generated visuals with AI VisionX. Learn how to craft reels, stories, and cinematic videos using powerful GenAI tools.",
                 image: "/images/events/vision.png",
+                prize: "TBA",
+                fee: "TBA",
+                formLink: "#",
                 coordinators: [
                     { name: "Alwin Lal", phone: "9744531108" },
                     { name: "Kevin Joseph", phone: "9074611663" }
@@ -572,8 +679,12 @@ export const eventZones = [
                 name: "Bridge Building Competition",
                 category: "MECH & MATTER ARENA",
                 dept: "CIVIL",
-                description: "Design and build a model bridge using materials like popsicle sticks within a fixed time.",
+                description: `The Bridge Making Competition is a hands-on engineering challenge where participants design and build a load-bearing bridge using popsicle (ice-cream) sticks and approved adhesives.
+The event evaluates structural strength, efficiency, and smart design through controlled load testing`,
                 image: "/images/events/bridge.png",
+                prize: "5500",
+                fee: "300 per Team",
+                formLink: "#",
                 coordinators: [
                     { name: "VINAYAK MANOHARAN", phone: "974638658" },
                     { name: "DELLA MARIYA GEORGE", phone: "9496740039" }
@@ -583,8 +694,18 @@ export const eventZones = [
                 name: "Concrete Cube Making Competition",
                 category: "MECH & MATTER ARENA",
                 dept: "CIVIL",
-                description: "Prepare and cast concrete cubes using provided materials; winners decided based on compressive strength.",
+                description: `Are you ready to test your engineering instincts?
+The Concrete Cube Making Competition 2026 – challenges you to cast a concrete cube that can withstand maximum compressive strength during testing.
+
+Participants will compete in two exciting stages:
+Stage 1: “Forge Phase” (Preparation Stage)— Teams will design and prepare their concrete mix using materials provided by the college.
+Stage 2: “Titan Trial” (Testing Stage)— The prepared cubes will undergo professional compressive strength testing.
+
+Basic Civil Engineering knowledge is sufficient to participate.`,
                 image: "/images/events/cube.png",
+                prize: "TBA",
+                fee: "TBA",
+                formLink: "#",
                 coordinators: [
                     { name: "Mathews Thomas", phone: "7510567627" },
                     { name: "Aswin P Nair", phone: "6238701144" }
@@ -599,18 +720,30 @@ export const technicalEvents: any = {}
 
 export const artsEvents = [
     // Day 1 - Feb 27
-    { name: "Classical Dance", description: "Showcase your classical dance skills - Bharatanatyam, Kathak, and more", registrationUrl: "#", date: "2026-02-27", time: "10:00 AM", location: "Main Auditorium" },
-    { name: "Western Dance", description: "Contemporary, hip-hop, and freestyle dance competition", registrationUrl: "#", date: "2026-02-27", time: "02:00 PM", location: "Open Air Theatre" },
-    { name: "Group Dance", description: "Team dance performance with creative choreography", registrationUrl: "#", date: "2026-02-27", time: "05:00 PM", location: "Main Auditorium" },
-    { name: "Solo Singing", description: "Showcase your vocal talent - any genre welcome", registrationUrl: "#", date: "2026-02-27", time: "11:00 AM", location: "Seminar Hall 1" },
-    { name: "Band Performance", description: "Battle of the bands - rock, jazz, fusion", registrationUrl: "#", date: "2026-02-27", time: "06:00 PM", location: "Main Stage" },
-    { name: "Instrumental", description: "Solo instrumental performance competition", registrationUrl: "#", date: "2026-02-27", time: "01:00 PM", location: "Music Room" },
+    { name: "VJC IDOL", description: "Event description", registrationUrl: "#", formLink: "#", date: "2026-02-27", time: "09:00 – 10:00", location: "MAIN AUDITORIUM" },
+    { name: "BLAST FROM THE PAST", description: "Event description", registrationUrl: "#", formLink: "#", date: "2026-02-27", time: "10:00 – 11:00", location: "MAIN AUDITORIUM" },
+    { name: "MOVIE SPOOF", description: "Event description", registrationUrl: "#", formLink: "#", date: "2026-02-27", time: "11:00 – 12:00", location: "MAIN AUDITORIUM" },
+    { name: "MIME", description: "Event description", registrationUrl: "#", formLink: "#", date: "2026-02-27", time: "01:30 – 02:30", location: "MAIN AUDITORIUM" },
+    { name: "BHARATHANATYAM", description: "Event description", registrationUrl: "#", formLink: "#", date: "2026-02-27", time: "09:00 – 10:00", location: "MINI AUDITORIUM" },
+    { name: "MARGAMKALI", description: "Event description", registrationUrl: "#", formLink: "#", date: "2026-02-27", time: "10:00 – 11:00", location: "MINI AUDITORIUM" },
+    { name: "THIRUVATHIRA", description: "Event description", registrationUrl: "#", formLink: "#", date: "2026-02-27", time: "11:00 – 12:00", location: "MINI AUDITORIUM" },
+    { name: "MONOACT", description: "Event description", registrationUrl: "#", formLink: "#", date: "2026-02-27", time: "09:00 – 10:00", location: "PTC SEMINAR HALL" },
+    { name: "MIMICRY", description: "Event description", registrationUrl: "#", formLink: "#", date: "2026-02-27", time: "10:00 – 11:00", location: "PTC SEMINAR HALL" },
+    { name: "FACE PAINTING", description: "Event description", registrationUrl: "#", formLink: "#", date: "2026-02-27", time: "01:30 – 02:30", location: "PTC SEMINAR HALL" },
+    { name: "RECITATION ENGLISH", description: "Event description", registrationUrl: "#", formLink: "#", date: "2026-02-27", time: "10:00 – 10:30", location: "C104" },
+    { name: "RECITATION MALAYALAM", description: "Event description", registrationUrl: "#", formLink: "#", date: "2026-02-27", time: "10:30 – 11:00", location: "C104" },
+    { name: "EXTEMPORE ENGLISH", description: "Event description", registrationUrl: "#", formLink: "#", date: "2026-02-27", time: "11:00 – 11:30", location: "C104" },
+    { name: "EXTEMPORE MALAYALAM", description: "Event description", registrationUrl: "#", formLink: "#", date: "2026-02-27", time: "11:30 – 12:00", location: "C104" },
 
     // Day 2 - Feb 28
-    { name: "Drama", description: "Theatrical performance and stage play", registrationUrl: "#", date: "2026-02-28", time: "10:00 AM", location: "Main Auditorium" },
-    { name: "Mime", description: "Express without words - mime and acting", registrationUrl: "#", date: "2026-02-28", time: "12:00 PM", location: "Seminar Hall 2" },
-    { name: "Stand-up Comedy", description: "Make the audience laugh with your wit", registrationUrl: "#", date: "2026-02-28", time: "03:00 PM", location: "Open Air Theatre" },
-    { name: "Painting", description: "On-the-spot painting competition", registrationUrl: "#", date: "2026-02-28", time: "09:00 AM", location: "Art Gallery" },
-    { name: "Photography", description: "Capture moments - theme-based photography", registrationUrl: "#", date: "2026-02-28", time: "All Day", location: "Campus Wide" },
-    { name: "Fashion Show", description: "Walk the ramp with style and creativity", registrationUrl: "#", date: "2026-02-28", time: "07:00 PM", location: "Main Stage" },
+    { name: "MR. & MS. DRISHYA", description: "Event description", registrationUrl: "#", formLink: "#", date: "2026-02-28", time: "09:00 – 10:30", location: "MAIN AUDITORIUM" },
+    { name: "GROUP SONG", description: "Event description", registrationUrl: "#", formLink: "#", date: "2026-02-28", time: "10:30 – 11:30", location: "MAIN AUDITORIUM" },
+    { name: "CINEMATIC DANCE", description: "Event description", registrationUrl: "#", formLink: "#", date: "2026-02-28", time: "01:30 – 03:30", location: "MAIN AUDITORIUM" },
+    { name: "STEP N SYNCHRO", description: "Event description", registrationUrl: "#", formLink: "#", date: "2026-02-28", time: "09:00 – 10:00", location: "MINI AUDITORIUM" },
+    { name: "DANCE TO THE BEAT", description: "Event description", registrationUrl: "#", formLink: "#", date: "2026-02-28", time: "10:00 – 11:00", location: "MINI AUDITORIUM" },
+    { name: "OPPANA", description: "Event description", registrationUrl: "#", formLink: "#", date: "2026-02-28", time: "11:00 – 12:30", location: "MINI AUDITORIUM" },
+    { name: "INSTRUMENTAL MUSIC", description: "Event description", registrationUrl: "#", formLink: "#", date: "2026-02-28", time: "01:30 – 02:30", location: "MINI AUDITORIUM" },
+    { name: "NADAN PATTU", description: "Event description", registrationUrl: "#", formLink: "#", date: "2026-02-28", time: "09:00 – 10:30", location: "PTC SEMINAR HALL" },
+    { name: "LIGHT MUSIC", description: "Event description", registrationUrl: "#", formLink: "#", date: "2026-02-28", time: "11:30 – 12:30", location: "PTC SEMINAR HALL" },
+    { name: "MEHANDI", description: "Event description", registrationUrl: "#", formLink: "#", date: "2026-02-28", time: "01:30 – 02:30", location: "PTC SEMINAR HALL" },
 ]

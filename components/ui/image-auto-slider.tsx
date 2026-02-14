@@ -5,10 +5,10 @@ import React from 'react';
 export const ImageAutoSlider = () => {
     // Images for the infinite scroll - using local Drishya images
     const images = [
-        "/images/drishya/1.png",
-        "/images/drishya/2.png",
-        "/images/drishya/3.png",
-        "/images/drishya/4.png"
+        "/images/drishya/1.jpg.jpeg",
+        "/images/drishya/2.jpg.jpeg",
+        "/images/drishya/3.jpg.jpeg",
+        "/images/drishya/4.jpg.jpeg"
     ];
 
     // Duplicate images multiple times for seamless loop (4 images * 4 = 16 items)

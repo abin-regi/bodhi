@@ -11,7 +11,7 @@ interface EventDetailViewProps {
 
 export default function EventDetailView({ event }: EventDetailViewProps) {
     // Generate derived data if missing
-    const prize = event.prize || "TBA"
+    const prize = event.prize
     const fee = event.fee || "Free"
     const teamSize = event.teamSize || "1-4"
     const date = event.date || "Feb 27-28"
@@ -97,57 +97,28 @@ export default function EventDetailView({ event }: EventDetailViewProps) {
                                     <span className="w-4 h-px bg-red-500" />
                                     Mission Briefing
                                 </h3>
-                                <p className="text-lg md:text-xl leading-relaxed text-white/80 font-light max-w-3xl border-l-2 border-white/10 pl-6">
+                                <p className="text-lg md:text-xl leading-relaxed text-white/80 font-light max-w-3xl border-l-2 border-white/10 pl-6 whitespace-pre-line">
                                     {event.description}
                                 </p>
                             </section>
 
                             {/* Prize / Bounty */}
-                            <section className="bg-white/[0.02] border border-white/5 p-8 rounded-sm relative overflow-hidden group">
-                                <div className="absolute top-0 right-0 p-4 opacity-5 group-hover:opacity-10 transition-opacity">
-                                    <Trophy className="w-32 h-32" />
-                                </div>
-                                <h3 className="text-xs font-mono text-yellow-500 mb-4 uppercase tracking-[0.2em] flex items-center gap-2">
-                                    <Trophy className="w-3 h-3" />
-                                    Projected Bounty
-                                </h3>
-                                <div className="text-4xl md:text-5xl font-bold font-mono text-white tracking-widest">
-                                    {typeof prize === 'number' ? `₹${prize.toLocaleString()}` : prize}
-                                </div>
-                            </section>
+                            {prize && prize !== "TBA" && (
+                                <section className="bg-white/[0.02] border border-white/5 p-8 rounded-sm relative overflow-hidden group">
+                                    <div className="absolute top-0 right-0 p-4 opacity-5 group-hover:opacity-10 transition-opacity">
+                                        <Trophy className="w-32 h-32" />
+                                    </div>
+                                    <h3 className="text-xs font-mono text-yellow-500 mb-4 uppercase tracking-[0.2em] flex items-center gap-2">
+                                        <Trophy className="w-3 h-3" />
+                                        Projected Bounty
+                                    </h3>
+                                    <div className="text-4xl md:text-5xl font-bold font-mono text-white tracking-widest">
+                                        {typeof prize === 'number' ? `₹${prize.toLocaleString()}` : prize}
+                                    </div>
+                                </section>
+                            )}
 
-                            {/* Rules / Protocols - Placeholder if missing */}
-                            <section>
-                                <h3 className="text-xs font-mono text-red-500 mb-6 uppercase tracking-[0.2em] flex items-center gap-2">
-                                    <ShieldAlert className="w-3 h-3" />
-                                    Protocols
-                                </h3>
-                                <div className="relative border border-white/10 bg-[#080808] p-6 md:p-8 rounded-sm">
-                                    {/* Corner accents */}
-                                    <div className="absolute top-0 left-0 w-2 h-2 border-t border-l border-red-500" />
-                                    <div className="absolute top-0 right-0 w-2 h-2 border-t border-r border-red-500" />
-                                    <div className="absolute bottom-0 left-0 w-2 h-2 border-b border-l border-red-500" />
-                                    <div className="absolute bottom-0 right-0 w-2 h-2 border-b border-r border-red-500" />
 
-                                    <ul className="space-y-4 font-mono text-sm text-white/60">
-                                        {event.rules ? (
-                                            event.rules.map((rule: string, i: number) => (
-                                                <li key={i} className="flex gap-4">
-                                                    <span className="text-red-500/50 select-none">{(i + 1).toString().padStart(2, '0')}</span>
-                                                    <span>{rule}</span>
-                                                </li>
-                                            ))
-                                        ) : (
-                                            <>
-                                                <li className="flex gap-4"><span className="text-red-500/50">01</span><span>Decisions of the judges will be final and binding.</span></li>
-                                                <li className="flex gap-4"><span className="text-red-500/50">02</span><span>Malpractice of any kind will lead to immediate disqualification.</span></li>
-                                                <li className="flex gap-4"><span className="text-red-500/50">03</span><span>Participants must carry valid college ID cards.</span></li>
-                                                <li className="flex gap-4"><span className="text-red-500/50">04</span><span>Report to the venue 30 minutes prior to the scheduled time.</span></li>
-                                            </>
-                                        )}
-                                    </ul>
-                                </div>
-                            </section>
 
                             {/* Coordinators */}
                             <section>
@@ -187,23 +158,7 @@ export default function EventDetailView({ event }: EventDetailViewProps) {
 
                             {/* Registration Card */}
                             <div className="bg-[#0A0A0A] border border-white/10 rounded-sm p-6 md:p-8 relative overflow-hidden">
-                                {/* Running Line Animation */}
-                                <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-red-600 to-transparent animate-shimmer" />
 
-                                <div className="mb-8">
-                                    <div className="flex justify-between items-end mb-2">
-                                        <span className="text-xs font-mono text-white/40 uppercase tracking-widest">Status</span>
-                                        <span className="text-xs font-mono text-green-500 uppercase tracking-widest flex items-center gap-1.5">
-                                            <span className="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse" />
-                                            Open
-                                        </span>
-                                    </div>
-                                    {/* Abstract Progress Bar */}
-                                    <div className="w-full h-1 bg-white/10 rounded-full overflow-hidden">
-                                        <div className="w-[60%] h-full bg-white/30" />
-                                    </div>
-                                    <p className="text-[10px] text-white/30 font-mono mt-2 text-right">Slots filling fast</p>
-                                </div>
 
                                 <div className="mb-8">
                                     <span className="block text-xs font-mono text-white/40 uppercase tracking-widest mb-1">Registration Fee</span>
@@ -214,7 +169,7 @@ export default function EventDetailView({ event }: EventDetailViewProps) {
 
                                 {/* Primary CTA */}
                                 <a
-                                    href={event.registrationUrl || "#"}
+                                    href={event.formLink || event.registrationUrl || "#"}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="block w-full"
@@ -230,26 +185,12 @@ export default function EventDetailView({ event }: EventDetailViewProps) {
                                     </button>
                                 </a>
 
-                                <p className="text-[10px] text-white/20 text-center mt-4 font-mono leading-tight">
-                                    By registering, you agree to event protocols and code of conduct.
-                                </p>
+
                             </div>
 
-                            {/* Alert Box (Optional) */}
-                            <div className="border border-yellow-500/20 bg-yellow-500/[0.02] p-4 flex gap-3 rounded-sm">
-                                <AlertTriangle className="w-4 h-4 text-yellow-500/60 shrink-0 mt-0.5" />
-                                <p className="text-xs text-yellow-500/60 font-mono leading-relaxed">
-                                    Team leaders must register on behalf of the entire squad. Ensure valid IDs at check-in.
-                                </p>
-                            </div>
 
-                            {/* Support Contact */}
-                            <div className="text-center">
-                                <p className="text-[10px] text-white/30 uppercase tracking-[0.2em] mb-2">Need Intel?</p>
-                                <a href="mailto:support@bodhifest.com" className="text-xs font-mono text-red-500 hover:text-white transition-colors">
-                                    CONTACT COMMAND
-                                </a>
-                            </div>
+
+
 
                         </div>
                     </motion.div>
