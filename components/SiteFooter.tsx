@@ -10,7 +10,7 @@ export default function Footer() {
             {/* Large Background Text */}
             <div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-5">
                 <h2 className="font-cinzel font-bold text-6xl md:text-8xl lg:text-9xl tracking-widest text-white whitespace-nowrap">
-                    BODHI X DRISHYA
+                    BODHI x DRISHYA
                 </h2>
             </div>
 

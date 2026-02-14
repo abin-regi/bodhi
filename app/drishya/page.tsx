@@ -32,7 +32,7 @@ export default function DrishyaPage() {
                     </div>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-                        {artsEvents.slice(0, 6).map((event, index) => (
+                        {artsEvents.slice(0, 14).map((event, index) => (
                             <DrishyaEventCard
                                 key={event.name}
                                 name={event.name}
@@ -59,13 +59,13 @@ export default function DrishyaPage() {
                     </div>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-                        {artsEvents.slice(6).map((event, index) => (
+                        {artsEvents.slice(14).map((event, index) => (
                             <DrishyaEventCard
                                 key={event.name}
                                 name={event.name}
                                 time={event.time || "10:00 AM"}
                                 location={event.location || "Venue"}
-                                index={index + 6}
+                                index={index + 14}
                             />
                         ))}
                     </div>
