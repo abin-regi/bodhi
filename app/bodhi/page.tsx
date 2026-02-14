@@ -219,7 +219,7 @@ export default function BodhiPage() {
                                                     {dept.name}
                                                 </h2>
                                             </motion.div>
-                                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 pl-0 md:pl-10">
+                                            <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 md:gap-6 pl-0 md:pl-10">
                                                 {dept.events.map((event, idx) => (
                                                     <EventCard
                                                         key={event.name}
@@ -252,7 +252,7 @@ export default function BodhiPage() {
                                                     {zone.title}
                                                 </h2>
                                             </motion.div>
-                                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 pl-0 md:pl-10">
+                                            <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 md:gap-6 pl-0 md:pl-10">
                                                 {zone.events.map((event, idx) => (
                                                     <EventCard
                                                         key={event.name}

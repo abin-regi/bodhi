@@ -65,19 +65,33 @@ export default function Footer() {
                     </div>
                 </div>
 
-                {/* Social Section */}
-                <div className="flex flex-col items-center gap-4 mb-6">
-                    <h4 className="font-cinzel text-sm tracking-wider text-gray-400 uppercase">
-                        Social
-                    </h4>
-                    <Link
-                        href="https://www.instagram.com/bodhi.vjcet?igsh=MTM0c2Fma2JyeHA2cA=="
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-white hover:text-red-500 transition-colors duration-300"
-                    >
-                        <FaInstagram size={24} />
-                    </Link>
+                {/* Social & Banner Row */}
+                <div className="flex flex-col md:flex-row items-center justify-between gap-6 mb-6">
+                    {/* Social Section (Left Side) */}
+                    <div className="flex flex-col items-center md:items-start gap-4">
+                        <h4 className="font-cinzel text-sm tracking-wider text-gray-400 uppercase">
+                            Social
+                        </h4>
+                        <Link
+                            href="https://www.instagram.com/bodhi.vjcet?igsh=MTM0c2Fma2JyeHA2cA=="
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-white hover:text-red-500 transition-colors duration-300"
+                        >
+                            <FaInstagram size={24} />
+                        </Link>
+                    </div>
+
+                    {/* VJCET Banner (Right Side) */}
+                    <div className="flex flex-col items-center md:items-end">
+                        <Image
+                            src="/images/home/vjcet full banner.png"
+                            alt="VJCET Banner"
+                            width={200}
+                            height={80}
+                            className="h-12 md:h-16 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity duration-300"
+                        />
+                    </div>
                 </div>
 
                 {/* Architectured By */}

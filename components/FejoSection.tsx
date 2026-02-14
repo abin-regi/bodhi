@@ -6,11 +6,6 @@ import Image from "next/image";
 export default function FejoSection() {
     const sectionRef = useRef<HTMLDivElement>(null);
     const [visible, setVisible] = useState(false);
-    const [shuffledText, setShuffledText] = useState("FEJO");
-
-    const finalText = "FEJO";
-    const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
     useEffect(() => {
         const observer = new IntersectionObserver(
             ([entry]) => {
@@ -25,35 +20,6 @@ export default function FejoSection() {
             if (sectionRef.current) observer.unobserve(sectionRef.current);
         };
     }, []);
-
-    // Shuffle animation effect
-    useEffect(() => {
-        if (!visible) return;
-
-        let iteration = 0;
-
-        const interval = setInterval(() => {
-            setShuffledText(
-                finalText
-                    .split("")
-                    .map((letter, index) => {
-                        if (index < iteration) {
-                            return finalText[index];
-                        }
-                        return letters[Math.floor(Math.random() * 26)];
-                    })
-                    .join("")
-            );
-
-            if (iteration >= finalText.length) {
-                clearInterval(interval);
-            }
-
-            iteration += 1 / 6;
-        }, 80);
-
-        return () => clearInterval(interval);
-    }, [visible]);
 
     return (
         <section
@@ -96,29 +62,18 @@ export default function FejoSection() {
                     </div>
                 </div>
 
-                {/* CENTER TEXT */}
-                <div className="flex items-center justify-center my-8 md:my-0 text-center">
-                    <h1 className="font-asoka tracking-wider flex flex-wrap items-center justify-center gap-4">
-                        {/* First Part - Hollow White */}
-                        <span className="font-light text-white text-2xl md:text-3xl lg:text-4xl whitespace-nowrap"
-                            style={{
-                                WebkitTextStroke: '2px white',
-                                WebkitTextFillColor: 'transparent',
-                                textShadow: '0 0 20px rgba(255, 255, 255, 0.3)'
-                            }}
-                        >
-                            THIS IS NOT A CONCERT
-                        </span>
-
-                        {/* Second Part - Thick Red */}
-                        <span className="text-red-500 font-bold text-4xl md:text-6xl lg:text-8xl"
-                            style={{
-                                textShadow: '0 0 30px rgba(68, 29, 29, 0.8)'
-                            }}
-                        >
-                            THIS IS {shuffledText}
-                        </span>
-                    </h1>
+                {/* CENTER IMAGE */}
+                <div className="flex flex-col items-center justify-center my-8 md:my-0">
+                    <h2 className="font-asoka text-red-600 text-2xl md:text-4xl tracking-[0.5em] mb-4 animate-pulse">
+                        THE LEGEND
+                    </h2>
+                    <Image
+                        src="/images/home/fejogold.png"
+                        alt="THIS IS NOT A CONCERT THIS IS FEJO"
+                        width={800}
+                        height={300}
+                        className="object-contain w-[90%] md:w-[60%] h-auto drop-shadow-[0_0_30px_rgba(220,38,38,0.6)] transition-transform duration-700 hover:scale-105"
+                    />
                 </div>
 
                 {/* RIGHT IMAGE */}

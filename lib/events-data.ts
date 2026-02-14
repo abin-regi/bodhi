@@ -4,7 +4,7 @@
 export const departments = [
     {
         id: "ai-ds",
-        name: "Artificial Intelligence and Data Science (AI & DS)",
+        name: "AI & DS",
         abbr: "AI & DS",
         slug: "ai-ds",
         events: [
@@ -14,6 +14,9 @@ export const departments = [
                 dept: "AI & DS",
                 description: "A next-gen tech mystery hunt challenging teams to decode patterns, interpret hidden systems, and uncover layered clues.",
                 image: "/images/events/coderift.png",
+                date: "Feb 28",
+                time: "10:00 AM",
+                teamSize: "2-4 Members",
                 coordinators: [
                     { name: "Ansaj", phone: "9895155001" },
                     { name: "Athul", phone: "9645028366" }
@@ -281,6 +284,28 @@ export const departments = [
                 ]
             }
         ]
+    },
+    {
+        id: "robotics-club",
+        name: "Robotics Club",
+        abbr: "ROBOTICS",
+        slug: "robotics-club",
+        events: [
+            {
+                name: "Linefollower robot competition",
+                category: "TECHNICAL",
+                dept: "ROBOTICS",
+                description: "As of now add description and image",
+                image: "/images/events/line.png",
+                date: "Feb 27",
+                time: "10:00 AM",
+                teamSize: "2-4 Members",
+                coordinators: [
+                    { name: "Coordinator Name", phone: "Phone Number" },
+                    { name: "Coordinator Name", phone: "Phone Number" }
+                ]
+            }
+        ]
     }
 ]
 
@@ -382,6 +407,20 @@ export const eventZones = [
                     "Wireless control is mandatory; tethered control is strictly prohibited.",
                     "Standard arena safety protocols must be followed during weapon testing.",
                     "Double elimination bracket system will be followed."
+                ]
+            },
+            {
+                name: "Linefollower robot competition",
+                category: "TECHNICAL",
+                dept: "ROBOTICS",
+                description: "As of now add description and image",
+                image: "/images/events/placeholder.png",
+                date: "Feb 27",
+                time: "10:00 AM",
+                teamSize: "2-4 Members",
+                coordinators: [
+                    { name: "Coordinator Name", phone: "Phone Number" },
+                    { name: "Coordinator Name", phone: "Phone Number" }
                 ]
             }
         ]
