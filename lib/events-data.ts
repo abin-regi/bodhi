@@ -60,10 +60,12 @@ export const departments = [
                     { name: "Benedict Chacko Mathew", phone: "6282031325" },
                     { name: "Kripa Sajo", phone: "8714031195" }
                 ],
-                prize: 15000,
-                fee: 400,
-                formLink: "#",
-                teamSize: "2-4 Members",
+                prize: "25000/-",
+                fee: "100 per head",
+                formLink: "https://code-and-chaos.netlify.app/registration",
+                date: "Feb 25-26",
+                time: "6:00 PM-8:00 AM",
+                teamSize: "1-4 Members",
                 rules: [
                     "Teams should bring their own laptops and hardware kits.",
                     "Internet connectivity and power sockets will be provided.",
@@ -91,9 +93,12 @@ export const departments = [
                 dept: "CSE",
                 description: "A theme based treasure hunt event where participants solve puzzles, follow clues and survive multiple elimination rounds.",
                 image: "/images/events/strangerthings.jpeg",
-                prize: "TBA",
-                fee: "TBA",
-                formLink: "#",
+                prize: "10,000/-",
+                fee: "50 per head",
+                date: "Feb 26",
+                time: "10:00 AM",
+                teamSize: "4 Members",
+                formLink: "https://forms.gle/cw4YFuzfb9vFFHPd7",
                 coordinators: [
                     { name: "Deon Johny", phone: "9188083702" },
                     { name: "Keerthana K Anil", phone: "7306749927" }
@@ -197,11 +202,14 @@ export const departments = [
                 name: "HACKTRONICS",
                 category: "HACKATHON",
                 dept: "EEE",
-                description: "A 12-hour hardware-based hackathon where teams design and build innovative hardware–software solutions to real-world problems.",
+                description: " HACKTRONICS is a 12-hour hardware-based hackathon where participants can propose and develop their own creative projects throughout the event.",
                 image: "/images/events/eeehack.jpeg",
-                prize: "TBA",
-                fee: "TBA",
-                formLink: "#",
+                prize: "11,000",
+                fee: "250 per team",
+                date: "Feb 25-26",
+                time: "7:00 PM",
+                teamSize: "Max 2 Members",
+                formLink: "https://forms.gle/cDfvYqJYyDkLH25Z6 ",
                 coordinators: [
                     { name: "Abraham", phone: "8547436923" },
                     { name: "Ashker", phone: "9946436741" }
@@ -215,12 +223,14 @@ export const departments = [
                 image: "/images/events/realsteel.png",
                 coordinators: [
                     { name: "Akshai", phone: "9048201463" },
-                    { name: "Arshad", phone: "9656132272" }
+                    { name: "Nikhil", phone: "9847416348" }
                 ],
-                prize: 25000,
-                fee: 1000,
-                formLink: "#",
-                teamSize: "Max 5 Members",
+                prize: "15000",
+                fee: "200 per Team",
+                date: "Feb 26",
+                time: "11:00 AM",
+                formLink: "https://forms.gle/PT6RgCnFVrYhf3zY6",
+                teamSize: "Max 4 Members",
                 rules: [
                     "Robots must comply with the 30kg weight category specifications.",
                     "Wireless control is mandatory; tethered control is strictly prohibited.",
@@ -254,11 +264,15 @@ export const departments = [
                 name: "TECH TRAVERSE",
                 category: "TECHNICAL",
                 dept: "ECE",
-                description: "The Project Expo 2026. A stage to showcase innovative and creative engineering solutions, breaking down silos between departments.",
+                description: `This is an open-call for all engineering batches to showcase their most innovative and creative solutions. If you have a problem-solving mindset, we have a booth for you.
+Whether you've built a physical Working Model 🛠️ or a groundbreaking Software Project 💻, this is your platform to shine.`,
                 image: "/images/events/project.png",
-                prize: "TBA",
-                fee: "TBA",
-                formLink: "#",
+                prize: "18,000/-",
+                fee: "300 per team ",
+                date: "Feb 25",
+                time: "10:00 AM",
+                teamSize: "Max 4 Members",
+                formLink: "https://forms.gle/PUSsWfdADLjH99Hp7",
                 coordinators: [
                     { name: "Bazil Abee", phone: "7736851614" },
                     { name: "Ryan Ajil", phone: "9946252194" }
@@ -281,9 +295,9 @@ The event evaluates structural strength, efficiency, and smart design through co
                 image: "/images/events/bridge.png",
                 prize: "5500",
                 fee: "300 per Team",
-                formLink: "#",
+                formLink: "https://forms.gle/PvkpgZXnroEnvBey7",
                 date: "Feb 26",
-                time: "10:00 AM",
+                time: "10:30 AM",
                 teamSize: "1-4 Members",
                 coordinators: [
                     { name: "VINAYAK MANOHARAN", phone: "974638658" },
@@ -294,11 +308,21 @@ The event evaluates structural strength, efficiency, and smart design through co
                 name: "Concrete Cube Making Competition",
                 category: "MECH & MATTER ARENA",
                 dept: "CIVIL",
-                description: "Are you ready to test your engineering instincts?The Concrete Cube Making Competition 2026 – challenges and cast a concrete cube that can withstand maximum compressive strength during testing.Participants will compete in two exciting stages:Stage 1: “Forge Phase” (Preparation Stage)— Teams will design and prepare their concrete mix using materials provided by the college.Stage 2: “Titan Trial” (Testing Stage)— The prepared cubes will undergo professional compressive strength testing. The cube that survives Basic Civil Engineering knowledge is sufficient to participate.",
+                description: `Are you ready to test your engineering instincts?
+The Concrete Cube Making Competition 2026 – challenges you to cast a concrete cube that can withstand maximum compressive strength during testing.
+
+Participants will compete in two exciting stages:
+Stage 1: “Forge Phase” (Preparation Stage)— Teams will design and prepare their concrete mix using materials provided by the college.
+Stage 2: “Titan Trial” (Testing Stage)— The prepared cubes will undergo professional compressive strength testing.
+
+Basic Civil Engineering knowledge is sufficient to participate.`,
                 image: "/images/events/cube.png",
-                prize: "TBA",
-                fee: "TBA",
-                formLink: "#",
+                prize: "7500/-",
+                fee: "500 per Team",
+                formLink: "https://forms.gle/cyFTCYh79jKGnH4N6",
+                date: "Feb 17",
+                time: "10:30 AM-4:10 PM",
+                teamSize: "Max 4 Members",
                 coordinators: [
                     { name: "Mathews Thomas", phone: "7510567627" },
                     { name: "Aswin P Nair", phone: "6238701144" }
@@ -387,10 +411,12 @@ export const eventZones = [
                     { name: "Benedict Chacko Mathew", phone: "6282031325" },
                     { name: "Kripa Sajo", phone: "8714031195" }
                 ],
-                prize: 15000,
-                fee: 400,
-                formLink: "#",
-                teamSize: "2-4 Members",
+                prize: "25000/-",
+                fee: "100 per head",
+                formLink: "https://code-and-chaos.netlify.app/registration",
+                date: "Feb 25-26",
+                time: "6:00 PM-8:00 AM",
+                teamSize: "1-4 Members",
                 rules: [
                     "Teams should bring their own laptops and hardware kits.",
                     "Internet connectivity and power sockets will be provided.",
@@ -402,16 +428,19 @@ export const eventZones = [
                 name: "HACKTRONICS",
                 category: "HACKATHON",
                 dept: "EEE",
-                description: "A 12-hour hardware-based hackathon where teams design and build innovative hardware–software solutions to real-world problems.",
+                description: " HACKTRONICS is a 12-hour hardware-based hackathon where participants can propose and develop their own creative projects throughout the event.",
                 image: "/images/events/eeehack.jpeg",
-                prize: "TBA",
-                fee: "TBA",
-                formLink: "#",
+                prize: "11,000",
+                fee: "250 per team",
+                date: "Feb 25-26",
+                time: "7:00 PM",
+                teamSize: "Max 2 Members",
+                formLink: "https://forms.gle/cDfvYqJYyDkLH25Z6 ",
                 coordinators: [
                     { name: "Abraham", phone: "8547436923" },
                     { name: "Ashker", phone: "9946436741" }
                 ]
-            }
+            },
         ]
     },
     {
@@ -452,11 +481,15 @@ export const eventZones = [
                 name: "TECH TRAVERSE",
                 category: "TECHNICAL",
                 dept: "ECE",
-                description: "The Project Expo 2026. A stage to showcase innovative and creative engineering solutions, breaking down silos between departments.",
+                description: `This is an open-call for all engineering batches to showcase their most innovative and creative solutions. If you have a problem-solving mindset, we have a booth for you.
+Whether you've built a physical Working Model 🛠️ or a groundbreaking Software Project 💻, this is your platform to shine.`,
                 image: "/images/events/project.png",
-                prize: "TBA",
-                fee: "TBA",
-                formLink: "#",
+                prize: "18,000/-",
+                fee: "300 per team ",
+                date: "Feb 25",
+                time: "10:00 AM",
+                teamSize: "Max 4 Members",
+                formLink: "https://forms.gle/PUSsWfdADLjH99Hp7",
                 coordinators: [
                     { name: "Bazil Abee", phone: "7736851614" },
                     { name: "Ryan Ajil", phone: "9946252194" }
@@ -470,12 +503,14 @@ export const eventZones = [
                 image: "/images/events/realsteel.png",
                 coordinators: [
                     { name: "Akshai", phone: "9048201463" },
-                    { name: "Arshad", phone: "9656132272" }
+                    { name: "Nikhil", phone: "9847416348" }
                 ],
-                prize: 25000,
-                fee: 1000,
-                formLink: "#",
-                teamSize: "Max 5 Members",
+                prize: "15000",
+                fee: "200 per Team",
+                date: "Feb 26",
+                time: "11:00 AM",
+                formLink: "https://forms.gle/PT6RgCnFVrYhf3zY6",
+                teamSize: "Max 4 Members",
                 rules: [
                     "Robots must comply with the 30kg weight category specifications.",
                     "Wireless control is mandatory; tethered control is strictly prohibited.",
@@ -483,6 +518,7 @@ export const eventZones = [
                     "Double elimination bracket system will be followed."
                 ]
             },
+
             {
                 name: "Linefollower robot competition",
                 category: "TECHNICAL",
@@ -542,6 +578,12 @@ export const eventZones = [
                 dept: "CSE",
                 description: "A theme based treasure hunt event where participants solve puzzles, follow clues and survive multiple elimination rounds.",
                 image: "/images/events/strangerthings.jpeg",
+                prize: "10,000/-",
+                fee: "50 per head",
+                date: "Feb 26",
+                time: "10:00 AM",
+                teamSize: "4 Members",
+                formLink: "https://forms.gle/cw4YFuzfb9vFFHPd7",
                 coordinators: [
                     { name: "Deon Johny", phone: "9188083702" },
                     { name: "Keerthana K Anil", phone: "7306749927" }
@@ -684,7 +726,10 @@ The event evaluates structural strength, efficiency, and smart design through co
                 image: "/images/events/bridge.png",
                 prize: "5500",
                 fee: "300 per Team",
-                formLink: "#",
+                formLink: "https://forms.gle/PvkpgZXnroEnvBey7",
+                date: "Feb 26",
+                time: "10:30 AM",
+                teamSize: "1-4 Members",
                 coordinators: [
                     { name: "VINAYAK MANOHARAN", phone: "974638658" },
                     { name: "DELLA MARIYA GEORGE", phone: "9496740039" }
@@ -703,9 +748,12 @@ Stage 2: “Titan Trial” (Testing Stage)— The prepared cubes will undergo pr
 
 Basic Civil Engineering knowledge is sufficient to participate.`,
                 image: "/images/events/cube.png",
-                prize: "TBA",
-                fee: "TBA",
-                formLink: "#",
+                prize: "7500/-",
+                fee: "500 per Team",
+                formLink: "https://forms.gle/cyFTCYh79jKGnH4N6",
+                date: "Feb 17",
+                time: "10:30 AM-4:10 PM",
+                teamSize: "Max 4 Members",
                 coordinators: [
                     { name: "Mathews Thomas", phone: "7510567627" },
                     { name: "Aswin P Nair", phone: "6238701144" }
