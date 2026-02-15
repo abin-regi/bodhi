@@ -29,10 +29,10 @@ export default function BodhiPage() {
 
                     {/* Background Image with Blend Overlay */}
                     <div
-                        className="absolute inset-0 bg-center bg-no-repeat opacity-150"
+                        className="absolute inset-0 bg-center bg-no-repeat opacity-40"
                         style={{
                             backgroundImage: `url('/images/hero-bodhi.jpeg')`,
-                            backgroundSize: '80%',
+                            backgroundSize: 'cover',
                         }}
                     />
 

@@ -13,10 +13,10 @@ interface EventDetailViewProps {
 export default function EventDetailView({ event }: EventDetailViewProps) {
     // Generate derived data if missing
     const prize = event.prize
-    const fee = event.fee || "Free"
-    const teamSize = event.teamSize || "1-4"
-    const date = event.date || "Feb 27-28"
-    const time = event.time || "9:00 AM"
+    const fee = event.fee
+    const teamSize = event.teamSize
+    const date = event.date
+    const time = event.time
 
     // Auto-scroll to top on mount
     useEffect(() => {
@@ -165,7 +165,7 @@ export default function EventDetailView({ event }: EventDetailViewProps) {
                                 <div className="mb-8">
                                     <span className="block text-xs font-mono text-white/40 uppercase tracking-widest mb-1">Registration Fee</span>
                                     <div className="text-3xl font-black text-white tracking-tight">
-                                        {fee === 'Free' ? 'FREE' : `₹${fee}`}
+                                        {fee === 'Free' ? 'FREE' : (fee ? `₹${fee}` : '')}
                                     </div>
                                 </div>
 
