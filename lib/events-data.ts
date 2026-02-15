@@ -207,7 +207,7 @@ export const departments = [
                 prize: "11,000",
                 fee: "250 per team",
                 date: "Feb 25-26",
-                time: "7:00 PM",
+                time: "7:30 PM -7:30 AM",
                 teamSize: "Max 2 Members",
                 formLink: "https://forms.gle/cDfvYqJYyDkLH25Z6 ",
                 coordinators: [
@@ -373,20 +373,23 @@ Basic Civil Engineering knowledge is sufficient to participate.`,
         slug: "robotics-club",
         events: [
             {
-                name: "Linefollower robot competition",
+                name: "PATHX ",
                 category: "TECHNICAL",
                 dept: "ROBOTICS",
-                description: "As of now add description and image",
+                description: `Build a fully autonomous bot capable of navigating a complex labyrinth of curves, intersections, and sharp turns in the shortest time possible. No remotes, no mercy—just pure code and sensors.
+Calibration is Key: Can your sensors handle the glare?
+Speed vs. Stability: Will you floor it or play it safe?
+The Finish Line: Only the most optimized PID loops will survive.`,
                 image: "/images/events/line.png",
-                prize: "TBA",
-                fee: "TBA",
-                formLink: "#",
-                date: "Feb 27",
+                prize: "8,000/-",
+                fee: "300 per Team",
+                formLink: "https://forms.gle/TaAbq6QhRQ9NrzU88",
+                date: "Feb 26",
                 time: "10:00 AM",
-                teamSize: "2-4 Members",
+                teamSize: "1-6 Members",
                 coordinators: [
-                    { name: "Coordinator Name", phone: "Phone Number" },
-                    { name: "Coordinator Name", phone: "Phone Number" }
+                    { name: "Don Dixon", phone: "9496693632" },
+                    { name: "Albert Joseph", phone: "8590792532" }
                 ]
             }
         ]
@@ -433,7 +436,7 @@ export const eventZones = [
                 prize: "11,000",
                 fee: "250 per team",
                 date: "Feb 25-26",
-                time: "7:00 PM",
+                time: "7:30 PM - 7:30 AM",
                 teamSize: "Max 2 Members",
                 formLink: "https://forms.gle/cDfvYqJYyDkLH25Z6 ",
                 coordinators: [
@@ -520,20 +523,23 @@ Whether you've built a physical Working Model 🛠️ or a groundbreaking Softwa
             },
 
             {
-                name: "Linefollower robot competition",
+                name: "PATHX",
                 category: "TECHNICAL",
                 dept: "ROBOTICS",
-                description: "As of now add description and image",
+                description: `Build a fully autonomous bot capable of navigating a complex labyrinth of curves, intersections, and sharp turns in the shortest time possible. No remotes, no mercy—just pure code and sensors.
+Calibration is Key: Can your sensors handle the glare?
+Speed vs. Stability: Will you floor it or play it safe?
+The Finish Line: Only the most optimized PID loops will survive.`,
                 image: "/images/events/line.png",
-                prize: "TBA",
-                fee: "TBA",
-                formLink: "#",
-                date: "Feb 27",
+                prize: "8,000/-",
+                fee: "300 per Team",
+                formLink: "https://forms.gle/TaAbq6QhRQ9NrzU88",
+                date: "Feb 26",
                 time: "10:00 AM",
-                teamSize: "2-4 Members",
+                teamSize: "1-6 Members",
                 coordinators: [
-                    { name: "Coordinator Name", phone: "Phone Number" },
-                    { name: "Coordinator Name", phone: "Phone Number" }
+                    { name: "Don Dixon", phone: "9496693632" },
+                    { name: "Albert Joseph", phone: "8590792532" }
                 ]
             }
         ]
