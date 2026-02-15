@@ -4,6 +4,7 @@ import { useEffect } from "react"
 import { motion } from "framer-motion"
 import Link from "next/link"
 import { ArrowLeft, Calendar, Clock, Users, Trophy, ShieldAlert, User, Phone, CheckCircle, AlertTriangle } from "lucide-react"
+import MenuButton from "./MenuButton"
 
 interface EventDetailViewProps {
     event: any // Using any to accommodate the enriched event object
@@ -23,7 +24,8 @@ export default function EventDetailView({ event }: EventDetailViewProps) {
     }, [])
 
     return (
-        <div className="min-h-screen bg-[#020202] text-[#e5e5e5] font-sans selection:bg-red-500/30">
+        <div className="min-h-screen bg-[#020202] text-[#e5e5e5] font-sans selection:bg-red-500/30 relative">
+            <MenuButton />
             {/* Subtle Grid Background */}
             <div className="fixed inset-0 pointer-events-none opacity-[0.03]"
                 style={{
