@@ -9,6 +9,7 @@ import MentalistSection from "@/components/MentalistSection"
 import Churam from "@/components/Churam"
 import FejoSection from "@/components/FejoSection"
 import Footer from "@/components/SiteFooter"
+import { ArrowRight } from "lucide-react"
 
 export default function Page() {
   return (
@@ -56,7 +57,7 @@ export default function Page() {
                   <div className="flex items-center justify-center gap-2 mb-2">
                     <span className="h-px w-4 bg-red-500/40" />
                     <span className="font-cinzel text-[10px] md:text-xs text-red-400 tracking-[0.2em] uppercase font-semibold">
-                      Technical
+                      Technical Fest
                     </span>
                     <span className="h-px w-4 bg-red-500/40" />
                   </div>
@@ -67,8 +68,8 @@ export default function Page() {
                   </h2>
 
                   {/* Subtitle */}
-                  <p className="text-xs md:text-sm font-cinzel text-[#e0c097] mt-2 tracking-wider font-semibold">
-                    Explore Technical Events
+                  <p className="text-xs md:text-sm font-cinzel text-[#e0c097] mt-2 tracking-wider font-semibold flex items-center justify-center gap-2">
+                    Explore <ArrowRight className="w-4 h-4" />
                   </p>
                 </div>
               </div>
@@ -95,7 +96,7 @@ export default function Page() {
                   <div className="flex items-center justify-center gap-2 mb-2">
                     <span className="h-px w-4 bg-red-500/40" />
                     <span className="font-cinzel text-[10px] md:text-xs text-red-400 tracking-[0.2em] uppercase font-semibold">
-                      Arts & Culture
+                      Arts & Cultural Fest
                     </span>
                     <span className="h-px w-4 bg-red-500/40" />
                   </div>
@@ -106,8 +107,8 @@ export default function Page() {
                   </h2>
 
                   {/* Subtitle */}
-                  <p className="text-xs md:text-sm font-cinzel text-[#e0c097] mt-2 tracking-wider font-semibold">
-                    Discover Arts Events
+                  <p className="text-xs md:text-sm font-cinzel text-[#e0c097] mt-2 tracking-wider font-semibold flex items-center justify-center gap-2">
+                    Discover <ArrowRight className="w-4 h-4" />
                   </p>
                 </div>
               </div>
