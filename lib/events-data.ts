@@ -175,14 +175,16 @@ export const departments = [
         slug: "information-technology",
         events: [
             {
-                name: "PENETRATION TESTING BOOTCAMP",
-                category: "WORKSHOP",
+                name: "SECUREBREAK",
+                category: "TECHNICAL",
                 dept: "IT",
                 description: "Full-day experience learning to think like attackers. Recon → Exploitation → Reporting with live demos and CTF.",
                 image: "/images/events/penetration.png",
-                prize: "TBA",
-                fee: "TBA",
-                formLink: "#",
+                prize: "4,000/-",
+                fee: "100/- per Head",
+                date: "Feb 26",
+                time: "10:00 AM",
+                formLink: "https://forms.gle/AYfC9wAqWvxxuhfYA",
                 coordinators: [
                     { name: "Abhijit Shaji", phone: "9526494491" },
                     { name: "Nivin K Sunil", phone: "8714930113" }
@@ -545,6 +547,22 @@ Whether you've built a physical Working Model 🛠️ or a groundbreaking Softwa
                 ]
             },
             {
+                name: "SECUREBREAK",
+                category: "TECHNICAL",
+                dept: "IT",
+                description: "Full-day experience learning to think like attackers. Recon → Exploitation → Reporting with live demos and CTF.",
+                image: "/images/events/penetration.png",
+                prize: "4,000/-",
+                fee: "100/- per Head",
+                date: "Feb 26",
+                time: "10:00 AM",
+                formLink: "https://forms.gle/AYfC9wAqWvxxuhfYA",
+                coordinators: [
+                    { name: "Abhijit Shaji", phone: "9526494491" },
+                    { name: "Nivin K Sunil", phone: "8714930113" }
+                ]
+            },
+            {
                 name: "REAL STEEL",
                 category: "TECHNICAL",
                 dept: "EEE",
@@ -689,20 +707,7 @@ The Finish Line: Only the most optimized PID loops will survive.`,
         tagline: "Hands-on. Real-world. No theory-only.",
         icon: "",
         events: [
-            {
-                name: "PENETRATION TESTING BOOTCAMP",
-                category: "WORKSHOP",
-                dept: "IT",
-                description: "Full-day experience learning to think like attackers. Recon → Exploitation → Reporting with live demos and CTF.",
-                image: "/images/events/penetration.png",
-                prize: "TBA",
-                fee: "TBA",
-                formLink: "#",
-                coordinators: [
-                    { name: "Abhijit Shaji", phone: "9526494491" },
-                    { name: "Nivin K Sunil", phone: "8714930113" }
-                ]
-            },
+
             {
                 name: "DRONEX: From Toy to Tactical",
                 category: "WORKSHOP",
