@@ -4,7 +4,7 @@
 export const departments = [
     {
         id: "ai-ds",
-        name: "Artificial Intelligence & Data Science",
+        name: "Artificial Intelligence & Data Science Engineering ",
         abbr: "AI & DS",
         slug: "ai-ds",
         events: [
@@ -46,7 +46,7 @@ export const departments = [
     },
     {
         id: "computer-science",
-        name: "Computer Science",
+        name: "Computer Science Engineering",
         abbr: "CSE",
         slug: "computer-science",
         events: [
@@ -128,7 +128,7 @@ export const departments = [
     },
     {
         id: "computer-science-design",
-        name: "Computer Science and Design",
+        name: "Computer Science and Design Engineering",
         abbr: "CSD",
         slug: "computer-science-design",
         events: [
@@ -170,7 +170,7 @@ export const departments = [
     },
     {
         id: "information-technology",
-        name: "Information Technology",
+        name: "Information Technology Engineering",
         abbr: "IT",
         slug: "information-technology",
         events: [
@@ -208,7 +208,7 @@ export const departments = [
     },
     {
         id: "eee",
-        name: "EEE",
+        name: "Electrical and Electronics Engineering",
         abbr: "EEE",
         slug: "eee",
         events: [
@@ -256,7 +256,7 @@ export const departments = [
     },
     {
         id: "electronics-communication",
-        name: "Electronics & Communication",
+        name: "Electronics & Communication Engineering",
         abbr: "ECE",
         slug: "electronics-communication",
         events: [
@@ -299,7 +299,7 @@ Whether you've built a physical Working Model 🛠️ or a groundbreaking Softwa
     },
     {
         id: "civil",
-        name: "Civil",
+        name: "Civil Engineering",
         abbr: "CIVIL",
         slug: "civil",
         events: [
@@ -349,7 +349,7 @@ Basic Civil Engineering knowledge is sufficient to participate.`,
     },
     {
         id: "mechanical",
-        name: "Mechanical",
+        name: "Mechanical Engineering",
         abbr: "MECH",
         slug: "mechanical",
         events: [
