@@ -139,8 +139,11 @@ export const departments = [
                 description: "One-stop destination for unlimited fun. A vibrant space filled with games, challenges, and endless excitement.",
                 image: "/images/events/fun.png",
                 prize: "TBA",
-                fee: "TBA",
+                fee: "Spot Registration",
                 formLink: "#",
+                date: "Feb 25-26",
+                time: "9:30 AM-4:00 PM",
+                teamSize: "Based on Games",
                 coordinators: [
                     { name: "Lewin Johnson", phone: "9656843500" },
                     { name: "Job T Inchanattu", phone: "9745340304" }
@@ -150,11 +153,14 @@ export const departments = [
                 name: "AI VisionX",
                 category: "WORKSHOP",
                 dept: "CSD",
-                description: "Step into the world of AI-generated visuals with AI VisionX. Learn how to craft reels, stories, and cinematic videos using powerful GenAI tools.",
+                description: "A hands-on workshop that guides you in creating beautiful social media reels using AI. Discover how to generate, edit, and enhance stunning visuals with ease—ideal for both beginners and creators.",
                 image: "/images/events/vision.png",
                 prize: "TBA",
-                fee: "TBA",
-                formLink: "#",
+                fee: "100 per Head",
+                date: "Feb 26",
+                time: "9:30 AM-12:30 PM",
+                teamSize: "Individual Event",
+                formLink: "https://forms.gle/q2ApYe5safAjR8cj7",
                 coordinators: [
                     { name: "Alwin Lal", phone: "9744531108" },
                     { name: "Kevin Joseph", phone: "9074611663" }
@@ -360,8 +366,8 @@ Basic Civil Engineering knowledge is sufficient to participate.`,
                 time: "1:30 PM-2:30 PM",
                 teamSize: "Individual Event",
                 coordinators: [
-                    { name: "Ashika Sathish", phone: "6238356942" },
-                    { name: "Jerin Shaji", phone: "9544061389" }
+                    { name: "Jentle Santhosh", phone: "9048404375" },
+                    { name: "Bestin Shaju", phone: "740625689" }
                 ]
             },
             {
@@ -374,10 +380,11 @@ Basic Civil Engineering knowledge is sufficient to participate.`,
                 fee: "150",
                 date: "Feb 26",
                 time: "9:30 AM-12:30 PM",
+                teamSize: "Individual Event",
                 formLink: "https://forms.gle/pMLHMCdEc9swMDTz7",
                 coordinators: [
-                    { name: "Sreehari P S", phone: "9061821037" },
-                    { name: "Jerin Shaji", phone: "9544061389" }
+                    { name: "Athul Manoj", phone: "8590889549" },
+                    { name: "Albin Roy", phone: "8848961032" }
                 ]
             }
         ]
@@ -533,8 +540,8 @@ Whether you've built a physical Working Model 🛠️ or a groundbreaking Softwa
                 time: "1:30 PM-2:30 PM",
                 teamSize: "Individual Event",
                 coordinators: [
-                    { name: "Ashika Sathish", phone: "6238356942" },
-                    { name: "Jerin Shaji", phone: "9544061389" }
+                    { name: "Jentle Santhosh", phone: "9048404375" },
+                    { name: "Bestin Shaju", phone: "740625689" }
                 ]
             },
             {
@@ -664,8 +671,11 @@ The Finish Line: Only the most optimized PID loops will survive.`,
                 description: "One-stop destination for unlimited fun. A vibrant space filled with games, challenges, and endless excitement.",
                 image: "/images/events/fun.png",
                 prize: "TBA",
-                fee: "TBA",
+                fee: "Spot Registration",
                 formLink: "#",
+                date: "Feb 25-26",
+                time: "9:30 AM-4:00 PM",
+                teamSize: "Based on Games",
                 coordinators: [
                     { name: "Lewin Johnson", phone: "9656843500" },
                     { name: "Job T Inchanattu", phone: "9745340304" }
@@ -734,21 +744,25 @@ The Finish Line: Only the most optimized PID loops will survive.`,
                 fee: "150",
                 date: "Feb 26",
                 time: "9:30 AM-12:30 PM",
+                teamSize: "Individual Event",
                 formLink: "https://forms.gle/pMLHMCdEc9swMDTz7",
                 coordinators: [
-                    { name: "Sreehari P S", phone: "9061821037" },
-                    { name: "Jerin Shaji", phone: "9544061389" }
+                    { name: "Athul Manoj", phone: "8590889549" },
+                    { name: "Albin Roy", phone: "8848961032" }
                 ]
             },
             {
                 name: "AI VisionX",
                 category: "WORKSHOP",
                 dept: "CSD",
-                description: "Step into the world of AI-generated visuals with AI VisionX. Learn how to craft reels, stories, and cinematic videos using powerful GenAI tools.",
+                description: "A hands-on workshop that guides you in creating beautiful social media reels using AI. Discover how to generate, edit, and enhance stunning visuals with ease—ideal for both beginners and creators.",
                 image: "/images/events/vision.png",
                 prize: "TBA",
-                fee: "TBA",
-                formLink: "#",
+                fee: "100 per Head",
+                date: "Feb 26",
+                time: "9:30 AM-12:30 PM",
+                teamSize: "Individual Event",
+                formLink: "https://forms.gle/q2ApYe5safAjR8cj7",
                 coordinators: [
                     { name: "Alwin Lal", phone: "9744531108" },
                     { name: "Kevin Joseph", phone: "9074611663" }
@@ -840,3 +854,24 @@ export const artsEvents = [
     { name: "LIGHT MUSIC", description: "Event description", registrationUrl: "#", formLink: "#", date: "2026-02-28", time: "11:30 – 12:30", location: "PTC SEMINAR HALL" },
     { name: "MEHANDI", description: "Event description", registrationUrl: "#", formLink: "#", date: "2026-02-28", time: "01:30 – 02:30", location: "PTC SEMINAR HALL" },
 ]
+
+// Sort functions
+const sortByName = (a: any, b: any) => a.name.localeCompare(b.name);
+const sortByTitle = (a: any, b: any) => a.title.localeCompare(b.title);
+
+// Sort departments alphabetically
+departments.sort(sortByName);
+
+// Sort events within each department
+departments.forEach(dept => {
+    dept.events.sort(sortByName);
+});
+
+// Sort event zones alphabetically
+eventZones.sort(sortByTitle);
+
+// Sort events within each zone
+eventZones.forEach(zone => {
+    zone.events.sort(sortByName);
+});
+
