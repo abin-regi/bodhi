@@ -29,14 +29,14 @@ export const departments = [
                 name: "FRAMEDROP",
                 category: "GAME ZONE",
                 dept: "AI & DS",
-                description: "A high-intensity, time-based team challenge blending rapid mini-games with competitive PS5 and PC gameplay.",
+                description: "A high-intensity competitive gaming event where players enter structured FIFA and FORZA HORIZON challenges across top titles and battle through tight brackets to climb the leaderboard and win real rewards. The stakes stay serious and the matches stay competitive. Once you’re done competing, step into the open console zones for uninterrupted gameplay and pure gaming thrill. No filler—just skill, reflex, and nonstop action. 🎮",
                 image: "/images/events/framedrop.jpeg",
-                prize: "TBA",
-                fee: "TBA",
-                formLink: "#",
-                date: "Feb 28",
-                time: "10:00 AM",
-                teamSize: "2-4 Members",
+                prize: "5,000/-",
+                fee: "100/- per Team",
+                formLink: "https://docs.google.com/forms/d/e/1FAIpQLSelnc9LOiDgN76FAKLFBqOxDR7B_7yjCai0K085IMlxAEMmDg/viewform?usp=publish-editor",
+                date: "Feb 25",
+                time: "10:00 AM - 4:00 PM",
+                teamSize: "2 Members",
                 coordinators: [
                     { name: "Adithyan K", phone: "9746368321" },
                     { name: "Sidharth S", phone: "8547219502" }
@@ -79,9 +79,12 @@ export const departments = [
                 dept: "CSE",
                 description: "A three level technical competition consisting file decryption, technical quizzes, and a final startup pitch.",
                 image: "/images/events/techarena.jpeg",
-                prize: "TBA",
-                fee: "TBA",
-                formLink: "#",
+                prize: "10,000/-",
+                fee: "100 per head",
+                date: "Feb 25",
+                time: "11:00 AM",
+                teamSize: "2 Members",
+                formLink: "https://forms.gle/3GYJwFezqoUR5BLx8",
                 coordinators: [
                     { name: "Sarah Swetha Thomas", phone: "8714793842" },
                     { name: "Eldho Aby", phone: "8281469701" }
@@ -112,9 +115,10 @@ export const departments = [
                 image: "/images/events/quirkquest.jpeg",
                 prize: "5,000/-",
                 date: "Feb 26",
-                time: "10:00 AM",
+                time: "11:00 AM",
                 fee: "50 per head",
-                formLink: "#",
+                teamSize: "2 Members",
+                formLink: "https://forms.gle/FogomJ9vV5YYg2iR9",
                 coordinators: [
                     { name: "Neethu Cheriyan", phone: "9188654452" },
                     { name: "Brijil Thengumthottathil", phone: "9895107690" }
@@ -185,8 +189,10 @@ export const departments = [
                 description: "Hands-on workshop introducing drone technology fundamentals, real-world uses, safety, and live flight demos.",
                 image: "/images/events/drone.png",
                 prize: "TBA",
-                fee: "TBA",
-                formLink: "#",
+                fee: "100/-",
+                date: "Feb 25",
+                time: "1:00 PM",
+                formLink: "https://forms.gle/4pgNiPDgYEYrGgX39",
                 coordinators: [
                     { name: "Joyal Sojan", phone: "6282657146" },
                     { name: "Anusha Saji", phone: "8547935816" }
@@ -258,7 +264,7 @@ export const departments = [
                 fee: "400 per Team",
                 date: "Feb 26",
                 time: "9:00 AM",
-                teamSize: "Max 3 Members",
+                teamSize: "3+2 (3 players + 2 substitutes)",
                 formLink: "https://docs.google.com/forms/d/e/1FAIpQLSf3cCUNw6QSs8gBCfllPqB1hJJbeJ_u59C_FF-fpsz9j7egDg/viewform?usp=dialog",
                 coordinators: [
                     { name: "Hisham Ebrahim", phone: "9633582362" },
@@ -343,13 +349,16 @@ Basic Civil Engineering knowledge is sufficient to participate.`,
         events: [
             {
                 name: "CAD MASTERS",
-                category: "WORKSHOP",
+                category: "TECHNICAL",
                 dept: "MECH",
-                description: "3D modeling and design competition.",
+                description: `The ultimate battlefield for designers is here.Where creativity meets accuracy.Where speed meets skill.Think you have what it takes to become a true CAD Master? 👑`,
                 image: "/images/events/cad.png",
-                prize: "TBA",
-                fee: "TBA",
-                formLink: "#",
+                prize: "1,500/-",
+                fee: "50",
+                formLink: "https://forms.gle/R9GfsG528LGoCHSFA",
+                date: "Feb 25",
+                time: "1:30 PM-2:30 PM",
+                teamSize: "Individual Event",
                 coordinators: [
                     { name: "Ashika Sathish", phone: "6238356942" },
                     { name: "Jerin Shaji", phone: "9544061389" }
@@ -362,8 +371,10 @@ Basic Civil Engineering knowledge is sufficient to participate.`,
                 description: "Hands-on workshop on ECU tuning and vehicle performance optimization.",
                 image: "/images/events/ecu.png",
                 prize: "TBA",
-                fee: "TBA",
-                formLink: "#",
+                fee: "150",
+                date: "Feb 26",
+                time: "9:30 AM-12:30 PM",
+                formLink: "https://forms.gle/pMLHMCdEc9swMDTz7",
                 coordinators: [
                     { name: "Sreehari P S", phone: "9061821037" },
                     { name: "Jerin Shaji", phone: "9544061389" }
@@ -463,9 +474,12 @@ export const eventZones = [
                 dept: "CSE",
                 description: "A three level technical competition consisting file decryption, technical quizzes, and a final startup pitch.",
                 image: "/images/events/techarena.jpeg",
-                prize: "TBA",
-                fee: "TBA",
-                formLink: "#",
+                prize: "10,000/-",
+                fee: "100 per head",
+                date: "Feb 25",
+                time: "11:00 AM",
+                teamSize: "2 Members",
+                formLink: "https://forms.gle/3GYJwFezqoUR5BLx8",
                 coordinators: [
                     { name: "Sarah Swetha Thomas", phone: "8714793842" },
                     { name: "Eldho Aby", phone: "8281469701" }
@@ -479,9 +493,10 @@ export const eventZones = [
                 image: "/images/events/quirkquest.jpeg",
                 prize: "5,000/-",
                 date: "Feb 26",
-                time: "10:00 AM",
+                time: "11:00 AM",
                 fee: "50 per head",
-                formLink: "#",
+                teamSize: "2 Members",
+                formLink: "https://forms.gle/FogomJ9vV5YYg2iR9",
                 coordinators: [
                     { name: "Neethu Cheriyan", phone: "9188654452" },
                     { name: "Brijil Thengumthottathil", phone: "9895107690" }
@@ -503,6 +518,23 @@ Whether you've built a physical Working Model 🛠️ or a groundbreaking Softwa
                 coordinators: [
                     { name: "Bazil Abee", phone: "7736851614" },
                     { name: "Ryan Ajil", phone: "9946252194" }
+                ]
+            },
+            {
+                name: "CAD MASTERS",
+                category: "TECHNICAL",
+                dept: "MECH",
+                description: `The ultimate battlefield for designers is here.Where creativity meets accuracy.Where speed meets skill.Think you have what it takes to become a true CAD Master? 👑`,
+                image: "/images/events/cad.png",
+                prize: "1,500/-",
+                fee: "50",
+                formLink: "https://forms.gle/R9GfsG528LGoCHSFA",
+                date: "Feb 25",
+                time: "1:30 PM-2:30 PM",
+                teamSize: "Individual Event",
+                coordinators: [
+                    { name: "Ashika Sathish", phone: "6238356942" },
+                    { name: "Jerin Shaji", phone: "9544061389" }
                 ]
             },
             {
@@ -578,11 +610,14 @@ The Finish Line: Only the most optimized PID loops will survive.`,
                 name: "FRAMEDROP",
                 category: "GAME ZONE",
                 dept: "AI & DS",
-                description: "A high-intensity, time-based team challenge blending rapid mini-games with competitive PS5 and PC gameplay.",
+                description: "A high-intensity competitive gaming event where players enter structured FIFA and FORZA HORIZON challenges across top titles and battle through tight brackets to climb the leaderboard and win real rewards. The stakes stay serious and the matches stay competitive. Once you’re done competing, step into the open console zones for uninterrupted gameplay and pure gaming thrill. No filler—just skill, reflex, and nonstop action. 🎮",
                 image: "/images/events/framedrop.jpeg",
-                prize: "TBA",
-                fee: "TBA",
-                formLink: "#",
+                prize: "5,000/-",
+                fee: "100/- per Team",
+                formLink: "https://docs.google.com/forms/d/e/1FAIpQLSelnc9LOiDgN76FAKLFBqOxDR7B_7yjCai0K085IMlxAEMmDg/viewform?usp=publish-editor",
+                date: "Feb 25",
+                time: "10:00 AM - 4:00 PM",
+                teamSize: "2 Members",
                 coordinators: [
                     { name: "Adithyan K", phone: "9746368321" },
                     { name: "Sidharth S", phone: "8547219502" }
@@ -615,7 +650,7 @@ The Finish Line: Only the most optimized PID loops will survive.`,
                 fee: "400 per Team",
                 date: "Feb 26",
                 time: "9:00 AM",
-                teamSize: "Max 3 Members",
+                teamSize: "3+2 (3 players + 2 substitutes)",
                 formLink: "https://docs.google.com/forms/d/e/1FAIpQLSf3cCUNw6QSs8gBCfllPqB1hJJbeJ_u59C_FF-fpsz9j7egDg/viewform?usp=dialog",
                 coordinators: [
                     { name: "Hisham Ebrahim", phone: "9633582362" },
@@ -665,8 +700,10 @@ The Finish Line: Only the most optimized PID loops will survive.`,
                 description: "Hands-on workshop introducing drone technology fundamentals, real-world uses, safety, and live flight demos.",
                 image: "/images/events/drone.png",
                 prize: "TBA",
-                fee: "TBA",
-                formLink: "#",
+                fee: "100/-",
+                date: "Feb 25",
+                time: "1:00 PM",
+                formLink: "https://forms.gle/4pgNiPDgYEYrGgX39",
                 coordinators: [
                     { name: "Joyal Sojan", phone: "6282657146" },
                     { name: "Anusha Saji", phone: "8547935816" }
@@ -686,20 +723,7 @@ The Finish Line: Only the most optimized PID loops will survive.`,
                     { name: "Kevin Joseph", phone: "9074611663" }
                 ]
             },
-            {
-                name: "CAD MASTERS",
-                category: "WORKSHOP",
-                dept: "MECH",
-                description: "3D modeling and design competition.",
-                image: "/images/events/cad.png",
-                prize: "TBA",
-                fee: "TBA",
-                formLink: "#",
-                coordinators: [
-                    { name: "Ashika Sathish", phone: "6238356942" },
-                    { name: "Jerin Shaji", phone: "9544061389" }
-                ]
-            },
+
             {
                 name: "ECU Tuning Workshop",
                 category: "WORKSHOP",
@@ -707,8 +731,10 @@ The Finish Line: Only the most optimized PID loops will survive.`,
                 description: "Hands-on workshop on ECU tuning and vehicle performance optimization.",
                 image: "/images/events/ecu.png",
                 prize: "TBA",
-                fee: "TBA",
-                formLink: "#",
+                fee: "150",
+                date: "Feb 26",
+                time: "9:30 AM-12:30 PM",
+                formLink: "https://forms.gle/pMLHMCdEc9swMDTz7",
                 coordinators: [
                     { name: "Sreehari P S", phone: "9061821037" },
                     { name: "Jerin Shaji", phone: "9544061389" }
