@@ -53,20 +53,17 @@ export default function FejoSection() {
                         />
                         {/* Overlapping Image */}
                         <Image
-                            src="/images/home/leftfejo.png"
+                            src="/images/home/fejofinal.png"
                             alt="Fejo Black Overlay"
-                            width={1000}
-                            height={1400}
-                            className="absolute inset-0 object-contain"
+                            width={700}
+                            height={1200}
+                            className="absolute inset-0 object-contain scale-100 translate-y-24 md:scale-100 md:translate-y-36"
                         />
                     </div>
                 </div>
 
                 {/* CENTER IMAGE */}
                 <div className="flex flex-col items-center justify-center my-8 md:my-0">
-                    <h2 className="font-asoka text-red-600 text-2xl md:text-4xl tracking-[0.5em] mb-4 animate-pulse">
-                        THE LEGEND
-                    </h2>
                     <Image
                         src="/images/home/fejogold.png"
                         alt="THIS IS NOT A CONCERT THIS IS FEJO"
@@ -74,6 +71,9 @@ export default function FejoSection() {
                         height={300}
                         className="object-contain w-[90%] md:w-[60%] h-auto drop-shadow-[0_0_30px_rgba(220,38,38,0.6)] transition-transform duration-700 hover:scale-105"
                     />
+                    <h2 className="font-asoka text-red-600 text-sm md:text-4xl tracking-[0.3em] md:tracking-[0.5em] mt-8 animate-pulse whitespace-nowrap">
+                        THE MALLU RAPPER
+                    </h2>
                 </div>
 
                 {/* RIGHT IMAGE */}
