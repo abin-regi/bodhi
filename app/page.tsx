@@ -57,7 +57,7 @@ export default function Page() {
                   <div className="flex items-center justify-center gap-2 mb-2">
                     <span className="h-px w-4 bg-red-500/40" />
                     <span className="font-cinzel text-[10px] md:text-xs text-red-400 tracking-[0.2em] uppercase font-semibold">
-                      Technical Fest
+                      Inter College Technical Fest
                     </span>
                     <span className="h-px w-4 bg-red-500/40" />
                   </div>
@@ -96,7 +96,7 @@ export default function Page() {
                   <div className="flex items-center justify-center gap-2 mb-2">
                     <span className="h-px w-4 bg-red-500/40" />
                     <span className="font-cinzel text-[10px] md:text-xs text-red-400 tracking-[0.2em] uppercase font-semibold">
-                      Arts & Cultural Fest
+                      Intra College Arts & Cultural Fest
                     </span>
                     <span className="h-px w-4 bg-red-500/40" />
                   </div>

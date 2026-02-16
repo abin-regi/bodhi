@@ -6,7 +6,7 @@ export const ImageAutoSlider = () => {
     // Images for the infinite scroll - using local Drishya images
     const images = [
         "/images/drishya/1.jpg.jpeg",
-        "/images/drishya/2.jpg.jpeg",
+
         "/images/drishya/3.jpg.jpeg",
         "/images/drishya/4.jpg.jpeg"
     ];
