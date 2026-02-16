@@ -11,7 +11,7 @@ export default function GlobalLoader() {
         // Initial load animation duration
         const timeout = setTimeout(() => {
             setLoading(false);
-        }, 3000); // 3 seconds minimal duration
+        }, 2000); // 2 seconds minimal duration
 
         return () => clearTimeout(timeout);
     }, []);
