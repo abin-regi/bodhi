@@ -7,6 +7,9 @@ import { ImageAutoSlider } from "@/components/ui/image-auto-slider"
 import MenuButton from "@/components/MenuButton"
 
 export default function DrishyaPage() {
+    const day1Events = artsEvents.filter((event) => event.date === "2026-02-27")
+    const day2Events = artsEvents.filter((event) => event.date === "2026-02-28")
+
     return (
         <main className="relative bg-[#050505] min-h-screen">
             <MenuButton />
@@ -32,7 +35,7 @@ export default function DrishyaPage() {
                     </div>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-                        {artsEvents.slice(0, 14).map((event, index) => (
+                        {day1Events.map((event, index) => (
                             <DrishyaEventCard
                                 key={event.name}
                                 name={event.name}
@@ -59,13 +62,13 @@ export default function DrishyaPage() {
                     </div>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-                        {artsEvents.slice(14).map((event, index) => (
+                        {day2Events.map((event, index) => (
                             <DrishyaEventCard
                                 key={event.name}
                                 name={event.name}
                                 time={event.time || "10:00 AM"}
                                 location={event.location || "Venue"}
-                                index={index + 14}
+                                index={index + day1Events.length}
                             />
                         ))}
                     </div>

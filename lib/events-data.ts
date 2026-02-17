@@ -34,12 +34,12 @@ export const departments = [
                 prize: "5,000/-",
                 fee: "100/- per Team",
                 formLink: "https://docs.google.com/forms/d/e/1FAIpQLSelnc9LOiDgN76FAKLFBqOxDR7B_7yjCai0K085IMlxAEMmDg/viewform?usp=publish-editor",
-                date: "Feb 25",
+                date: "Feb 25-26",
                 time: "10:00 AM - 4:00 PM",
                 teamSize: "2 Members",
                 coordinators: [
-                    { name: "Adithyan K", phone: "9746368321" },
-                    { name: "Sidharth S", phone: "8547219502" }
+                    { name: "Alan Biju", phone: "8921208615" },
+                    { name: "Devadath", phone: "8075360352" }
                 ]
             }
         ]
@@ -645,14 +645,15 @@ The Finish Line: Only the most optimized PID loops will survive.`,
                 prize: "5,000/-",
                 fee: "100/- per Team",
                 formLink: "https://docs.google.com/forms/d/e/1FAIpQLSelnc9LOiDgN76FAKLFBqOxDR7B_7yjCai0K085IMlxAEMmDg/viewform?usp=publish-editor",
-                date: "Feb 25",
+                date: "Feb 25-26",
                 time: "10:00 AM - 4:00 PM",
                 teamSize: "2 Members",
                 coordinators: [
-                    { name: "Adithyan K", phone: "9746368321" },
-                    { name: "Sidharth S", phone: "8547219502" }
+                    { name: "Alan Biju", phone: "8921208615" },
+                    { name: "Devadath", phone: "8075360352" }
                 ]
             },
+
             {
                 name: "STRANGER THINGS",
                 category: "GAME",
@@ -856,6 +857,7 @@ export const artsEvents = [
     { name: "RECITATION MALAYALAM", description: "Event description", registrationUrl: "#", formLink: "#", date: "2026-02-27", time: "10:30 – 11:00", location: "C104" },
     { name: "EXTEMPORE ENGLISH", description: "Event description", registrationUrl: "#", formLink: "#", date: "2026-02-27", time: "11:00 – 11:30", location: "C104" },
     { name: "EXTEMPORE MALAYALAM", description: "Event description", registrationUrl: "#", formLink: "#", date: "2026-02-27", time: "11:30 – 12:00", location: "C104" },
+    { name: "MAPILAPPATTU", description: "Event description", registrationUrl: "#", formLink: "#", date: "2026-02-27", time: "12:00 – 12:30", location: "C104" },
 
     // Day 2 - Feb 28
     { name: "MR. & MS. DRISHYA", description: "Event description", registrationUrl: "#", formLink: "#", date: "2026-02-28", time: "09:00 – 10:30", location: "MAIN AUDITORIUM" },
