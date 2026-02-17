@@ -136,7 +136,12 @@ export const departments = [
                 name: "FUNFINITY",
                 category: "GAMES",
                 dept: "CSD",
-                description: "One-stop destination for unlimited fun. A vibrant space filled with games, challenges, and endless excitement.",
+                description: `Funfinity is your ultimate fun zone at Bodhi 2026 — a vibrant space packed with games, challenges, and nonstop excitement. Walk in, play hard, and make it unforgettable.🎯 Games Lineup:
+
+🔥 ZING – A fast paced ball throwing challenge.
+🗝️ JUMANJI – An escape room packed with puzzles and surprises.
+🎮 PLAYVERSE – VR and console gaming zone for immersive thrills.
+🚩 Capture The Flag – Strategy, speed, and competitive action.`,
                 image: "/images/events/fun.png",
                 prize: "TBA",
                 fee: "Spot Registration",
@@ -145,15 +150,15 @@ export const departments = [
                 time: "9:30 AM-4:00 PM",
                 teamSize: "Based on Games",
                 coordinators: [
-                    { name: "Lewin Johnson", phone: "9656843500" },
-                    { name: "Job T Inchanattu", phone: "9745340304" }
+                    { name: "Dhanush", phone: "9605561391" },
+                    { name: "Revathy", phone: "6238472684" }
                 ]
             },
             {
                 name: "AI VisionX",
                 category: "WORKSHOP",
                 dept: "CSD",
-                description: "A hands-on workshop that guides you in creating beautiful social media reels using AI. Discover how to generate, edit, and enhance stunning visuals with ease—ideal for both beginners and creators.",
+                description: "Learn how to generate, edit, and enhance eye catching visuals with ease. Perfect for beginners and creators who want to turn ideas into scroll stopping content.",
                 image: "/images/events/vision.png",
                 prize: "TBA",
                 fee: "100 per Head",
@@ -162,8 +167,8 @@ export const departments = [
                 teamSize: "Individual Event",
                 formLink: "https://forms.gle/q2ApYe5safAjR8cj7",
                 coordinators: [
-                    { name: "Alwin Lal", phone: "9744531108" },
-                    { name: "Kevin Joseph", phone: "9074611663" }
+                    { name: "Glen Jacob", phone: "7560851620" },
+                    { name: "Naeema", phone: "8129440753" }
                 ]
             }
         ]
@@ -686,7 +691,12 @@ The Finish Line: Only the most optimized PID loops will survive.`,
                 name: "FUNFINITY",
                 category: "GAMES",
                 dept: "CSD",
-                description: "One-stop destination for unlimited fun. A vibrant space filled with games, challenges, and endless excitement.",
+                description: `Funfinity is your ultimate fun zone at Bodhi 2026 — a vibrant space packed with games, challenges, and nonstop excitement. Walk in, play hard, and make it unforgettable.🎯 Games Lineup:
+
+🔥 ZING – A fast paced ball throwing challenge.
+🗝️ JUMANJI – An escape room packed with puzzles and surprises.
+🎮 PLAYVERSE – VR and console gaming zone for immersive thrills.
+🚩 Capture The Flag – Strategy, speed, and competitive action.`,
                 image: "/images/events/fun.png",
                 prize: "TBA",
                 fee: "Spot Registration",
@@ -695,8 +705,8 @@ The Finish Line: Only the most optimized PID loops will survive.`,
                 time: "9:30 AM-4:00 PM",
                 teamSize: "Based on Games",
                 coordinators: [
-                    { name: "Lewin Johnson", phone: "9656843500" },
-                    { name: "Job T Inchanattu", phone: "9745340304" }
+                    { name: "Dhanush", phone: "9605561391" },
+                    { name: "Revathy", phone: "6238472684" }
                 ]
             }
         ]
@@ -760,7 +770,7 @@ The Finish Line: Only the most optimized PID loops will survive.`,
                 name: "AI VisionX",
                 category: "WORKSHOP",
                 dept: "CSD",
-                description: "A hands-on workshop that guides you in creating beautiful social media reels using AI. Discover how to generate, edit, and enhance stunning visuals with ease—ideal for both beginners and creators.",
+                description: "Learn how to generate, edit, and enhance eye catching visuals with ease. Perfect for beginners and creators who want to turn ideas into scroll stopping content.",
                 image: "/images/events/vision.png",
                 prize: "TBA",
                 fee: "100 per Head",
@@ -769,8 +779,8 @@ The Finish Line: Only the most optimized PID loops will survive.`,
                 teamSize: "Individual Event",
                 formLink: "https://forms.gle/q2ApYe5safAjR8cj7",
                 coordinators: [
-                    { name: "Alwin Lal", phone: "9744531108" },
-                    { name: "Kevin Joseph", phone: "9074611663" }
+                    { name: "Glen Jacob", phone: "7560851620" },
+                    { name: "Naeema", phone: "8129440753" }
                 ]
             }
         ]

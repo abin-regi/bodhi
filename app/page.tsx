@@ -5,6 +5,7 @@ import Image from "next/image"
 import { motion } from "framer-motion"
 import HeroBackground from "@/components/HeroBackground"
 import Mototorque from "@/components/Mototorque"
+import SasiSection from "@/components/SasiSection"
 import MentalistSection from "@/components/MentalistSection"
 import Churam from "@/components/Churam"
 import FejoSection from "@/components/FejoSection"
@@ -125,6 +126,9 @@ export default function Page() {
 
       {/* MOTOTORQUE SECTION */}
       <Mototorque />
+
+      {/* SASI SECTION */}
+      <SasiSection />
 
       {/* MENTALIST SECTION */}
       <MentalistSection />
