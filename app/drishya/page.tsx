@@ -1,6 +1,7 @@
 
 import DrishyaHero from "@/components/drishya-hero"
 import DrishyaEventCard from "@/components/drishya-event-card"
+import TeamSection from "@/components/TeamSection"
 import Footer from "@/components/SiteFooter"
 import { artsEvents } from "@/lib/events-data"
 import { ImageAutoSlider } from "@/components/ui/image-auto-slider"
@@ -75,6 +76,7 @@ export default function DrishyaPage() {
                 </section>
 
             </div>
+
 
             <Footer />
         </main>

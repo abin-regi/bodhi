@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation"
 
 import Footer from "@/components/SiteFooter"
+import TeamSection from "@/components/TeamSection"
 import DeptEventsContent from "@/components/dept-events-content"
 import { departments, technicalEvents } from "@/lib/events-data"
 
@@ -29,6 +30,7 @@ export default async function DeptEventsPage({ params }: DeptPageProps) {
     return (
         <main className="relative bg-[#050505] min-h-screen">
             <DeptEventsContent department={department} events={events} />
+
             <Footer />
         </main>
     )
