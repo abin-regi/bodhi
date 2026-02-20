@@ -1,6 +1,7 @@
 "use client"
 
 import Footer from "@/components/SiteFooter"
+import TeamSection from "@/components/TeamSection"
 import CustomCursor from "@/components/custom-cursor"
 import EventCard from "@/components/event-card"
 import { departments, eventZones } from "@/lib/events-data"
@@ -277,6 +278,7 @@ export default function BodhiPage() {
                 <div className="relative h-px w-full">
                     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-red-500/40 to-transparent" />
                 </div>
+
 
                 <Footer />
             </main>
