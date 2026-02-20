@@ -34,7 +34,7 @@ const TeamSection = () => {
           </div>
 
           <div className="team-column">
-            <h2 className="team-title">Designer</h2>
+            <h2 className="team-title">Designers</h2>
             <a href="https://www.instagram.com/ar_windx/" target="_blank">
               <FaInstagram /> Aravind R
             </a>
