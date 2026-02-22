@@ -423,6 +423,31 @@ The Finish Line: Only the most optimized PID loops will survive.`,
                 ]
             }
         ]
+    },
+    {
+        id: "tinkerhub",
+        name: "TinkerHub VJCET",
+        abbr: "TINKERHUB",
+        slug: "tinkerhub",
+        events: [
+            {
+                name: "SOURCE CODE",
+                category: "TECHNICAL",
+                dept: "TINKERHUB",
+                description: `Rebuilding with AI Prompt\n\nEver opened a website and wondered how it was built? At Bodhi 2026, TinkerHub VJCET gives you the chance to try it yourself. We'll provide a fully developed website, and your task is to recreate it as accurately as possible. You can use any tools (even AI 😌), notice the details, understand the structure, and build it cleanly.`,
+                image: "/images/events/sourcecode.png",
+                prize: "5,000/-",
+                fee: "Free Registration",
+                date: "Feb 25",
+                time: "1:30 PM - 4:00 PM",
+                teamSize: "Individual Event",
+                formLink: "https://tinkerhub.org/events/4CW072REQ9/source-code",
+                coordinators: [
+                    { name: "Sebin Geo", phone: "9778396955" },
+                    { name: "Anna Ajay", phone: "8289952499" }
+                ]
+            }
+        ]
     }
 ]
 
@@ -609,6 +634,23 @@ The Finish Line: Only the most optimized PID loops will survive.`,
                 coordinators: [
                     { name: "Don Dixon", phone: "9496693632" },
                     { name: "Albert Joseph", phone: "8590792532" }
+                ]
+            },
+            {
+                name: "SOURCE CODE",
+                category: "TECHNICAL",
+                dept: "TINKERHUB",
+                description: `Rebuilding with AI Prompt\n\nEver opened a website and wondered how it was built? At Bodhi 2026, TinkerHub VJCET gives you the chance to try it yourself. We'll provide a fully developed website, and your task is to recreate it as accurately as possible. You can use any tools (even AI 😌), notice the details, understand the structure, and build it cleanly.`,
+                image: "/images/events/sourcecode.png",
+                prize: "5,000/-",
+                fee: "Free Registration",
+                date: "Feb 25",
+                time: "1:30 PM - 4:00 PM",
+                teamSize: "Individual Event",
+                formLink: "https://tinkerhub.org/events/4CW072REQ9/source-code",
+                coordinators: [
+                    { name: "Sebin Geo", phone: "9778396955" },
+                    { name: "Anna Ajay", phone: "8289952499" }
                 ]
             }
         ]

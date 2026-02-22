@@ -9,6 +9,7 @@ import SasiSection from "@/components/SasiSection"
 import MentalistSection from "@/components/MentalistSection"
 import Churam from "@/components/Churam"
 import FejoSection from "@/components/FejoSection"
+import SponsorsSection from "@/components/SponsorsSection"
 import TeamSection from "@/components/TeamSection"
 import Footer from "@/components/SiteFooter"
 import { ArrowRight } from "lucide-react"
@@ -150,6 +151,9 @@ export default function Page() {
 
       {/* FEJO SECTION */}
       <FejoSection />
+
+      {/* SPONSORS SECTION */}
+      <SponsorsSection />
 
       {/* TEAM SECTION */}
       <TeamSection />
