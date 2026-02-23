@@ -3,7 +3,7 @@
 import { useEffect } from "react"
 import { motion } from "framer-motion"
 import Link from "next/link"
-import { ArrowLeft, Calendar, Clock, Users, Trophy, ShieldAlert, User, Phone, CheckCircle, AlertTriangle } from "lucide-react"
+import { ArrowLeft, Calendar, Clock, Users, Trophy, ShieldAlert, User, Phone, CheckCircle, AlertTriangle, MapPin } from "lucide-react"
 import MenuButton from "./MenuButton"
 
 interface EventDetailViewProps {
@@ -82,6 +82,10 @@ export default function EventDetailView({ event }: EventDetailViewProps) {
                                 <div className="flex items-center gap-3">
                                     <Clock className="w-4 h-4 text-red-500/80" />
                                     <span className="text-sm font-mono text-white/80 tracking-wide">{time}</span>
+                                </div>
+                                <div className="flex items-center gap-3">
+                                    <MapPin className="w-4 h-4 text-red-500/80" />
+                                    <span className="text-sm font-mono text-white/80 tracking-wide">{event.venue || "TBA"}</span>
                                 </div>
                                 <div className="flex items-center gap-3">
                                     <Users className="w-4 h-4 text-red-500/80" />
