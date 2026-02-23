@@ -953,8 +953,8 @@ export const artsEvents = [
     { name: "STEP N SYNCHRO", description: "Event description", registrationUrl: "#", formLink: "#", date: "2026-02-28", time: "12:00 – 01:00 PM", location: "MINI AUDITORIUM" },
     { name: "MIME", description: "Event description", registrationUrl: "#", formLink: "#", date: "2026-02-28", time: "01:30 – 02:30 PM", location: "MINI AUDITORIUM" },
     { name: "LIGHT MUSIC", description: "Event description", registrationUrl: "#", formLink: "#", date: "2026-02-28", time: "10:00 – 11:00 AM", location: "PTC SEMINAR HALL" },
-    { name: "NADAN PATTU", description: "Event description", registrationUrl: "#", formLink: "#", date: "2026-02-28", time: "11:00 – 12:00 PM", location: "PTC SEMINAR HALL" },
-    { name: "MEHANDI", description: "Event description", registrationUrl: "#", formLink: "#", date: "2026-02-28", time: "12:00 – 01:00 PM", location: "PTC SEMINAR HALL" },
+    { name: "NADAN PATTU", description: "Event description", registrationUrl: "#", formLink: "#", date: "2026-02-28", time: "12:30 – 1:30 PM", location: "PTC SEMINAR HALL" },
+    { name: "MEHANDI", description: "Event description", registrationUrl: "#", formLink: "#", date: "2026-02-28", time: "1:30 – 02:30 PM", location: "PTC SEMINAR HALL" },
     { name: "43 MILES & FEJO", description: "Event description", registrationUrl: "#", formLink: "#", date: "2026-02-28", time: "EVENING", location: "OPEN STAGE" },
 ]
 
