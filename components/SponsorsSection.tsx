@@ -20,6 +20,16 @@ const SponsorsSection = () => {
       <section className="sponsor-section">
         <h2 className="sponsor-title">Our Sponsors</h2>
 
+        {/* Title Sponsor */}
+        <div className="title-sponsor-wrapper">
+          <h3 className="title-sponsor-label">Title Sponsor</h3>
+          <img
+            src="/images/sponors/title.png"
+            alt="Title Sponsor"
+            className="title-sponsor-img"
+          />
+        </div>
+
         {/* Row 1 */}
         <div className="marquee">
           <div className="track scroll-left">
@@ -60,8 +70,30 @@ const SponsorsSection = () => {
           font-family: 'Asoka', serif;
           color: #b30000;
           font-size: 50px;
-          margin-bottom: 70px;
+          margin-bottom: 40px;
           letter-spacing: 3px;
+        }
+
+        .title-sponsor-wrapper {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-bottom: 60px;
+        }
+
+        .title-sponsor-label {
+          font-family: var(--font-cinzel), 'Cinzel', serif;
+          color: #ffffff;
+          font-size: 28px;
+          letter-spacing: 4px;
+          text-transform: uppercase;
+          margin-bottom: 24px;
+        }
+
+        .title-sponsor-img {
+          max-width: 320px;
+          width: 80%;
+          object-fit: contain;
         }
 
         .marquee {
